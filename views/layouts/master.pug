@@ -7,9 +7,9 @@ head
         block title
     link(rel='icon' href='/favicon.ico' type='image/x-icon')
     // Core css
-    link(rel='stylesheet' href='/assets/plugins/bootstrap/css/bootstrap.css')
-    link(rel='stylesheet' href='/assets/plugins/node-waves/waves.css')
-    link(rel='stylesheet' href='/assets/plugins/animate-css/animate.css')
+    link(rel='stylesheet' href='/assets/plugins/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet' href='/assets/plugins/node-waves/waves.min.css')
+    link(rel='stylesheet' href='/assets/plugins/animate-css/animate.min.css')
     // Google Fonts
     link(href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' type='text/css')
@@ -17,11 +17,12 @@ head
     // Extra css
     block extra-css
     // Extra css
-    link(rel='stylesheet' href='/assets/css/style.css')
-    link(rel='stylesheet' href='/assets/css/themes/all-themes.css')
+    link(rel='stylesheet' href='/assets/css/style.min.css')
+    link(rel='stylesheet' href='/assets/css/themes/all-themes.min.css')
+
+body.theme-red
 include loader
 // overlay
-body.theme-red
 .overlay
 // overlay
 include header
@@ -31,10 +32,10 @@ section.content
     block content
 // Script file
 script(type='text/javascript' src='/assets/plugins/jquery/jquery.min.js')
-script(type='text/javascript' src='/assets/plugins/bootstrap/js/bootstrap.js')
-script(type='text/javascript' src='/assets/plugins/bootstrap-select/js/bootstrap-select.js')
-script(type='text/javascript' src='/assets/plugins/jquery-slimscroll/jquery.slimscroll.js')
-script(type='text/javascript' src='/assets/plugins/node-waves/waves.js')
+script(type='text/javascript' src='/assets/plugins/bootstrap/js/bootstrap.min.js')
+script(type='text/javascript' src='/assets/plugins/bootstrap-select/js/bootstrap-select.min.js')
+script(type='text/javascript' src='/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js')
+script(type='text/javascript' src='/assets/plugins/node-waves/waves.min.js')
 script(type='text/javascript' src='/assets/js/admin.js')
 script(type='text/javascript' src='/assets/js/demo.js')
 // Extra script

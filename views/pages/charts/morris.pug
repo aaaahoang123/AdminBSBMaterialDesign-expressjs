@@ -1,0 +1,98 @@
+extends ../../layouts/master
+
+block title
+    | Morris Chart
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/morrisjs/morris.css')
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/raphael/raphael.min.js')
+    script(type='text/javascript' src='/assets/plugins/morrisjs/morris.js')
+    script(type='text/javascript' src='/assets/js/pages/charts/morris.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | MORRIS
+                small
+                    | Taken from&nbsp;
+                    a(href='https://github.com/morrisjs/morris.js' target='_blank') github.com/morrisjs/morris.js
+        .row.clearfix
+            // Line Chart
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 LINE CHART
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #line_chart.graph
+            // #END# Line Chart
+            // Bar Chart
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 BAR CHART
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #bar_chart.graph
+            // #END# Bar Chart
+        .row.clearfix
+            // Area Chart
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 AREA CHART
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #area_chart.graph
+            // #END# Area Chart
+            // Donut Chart
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 DONUT CHART
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #donut_chart.graph
+            // #END# Donut Chart

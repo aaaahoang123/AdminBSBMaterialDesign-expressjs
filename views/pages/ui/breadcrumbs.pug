@@ -1,0 +1,408 @@
+extends ../../layouts/master
+
+block title
+    | Bread Crumbs
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 BREADCRUMBS
+        .row.clearfix
+            // Basic Examples
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BASIC EXAMPLES
+                            small
+                                | Separators are automatically added in CSS through&nbsp;
+                                code :before
+                                |  and&nbsp;
+                                code content
+                                | .
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ol.breadcrumb
+                            li.active Home
+                        ol.breadcrumb
+                            li
+                                a(href='javascript:void(0);') Home
+                            li.active Library
+                        ol.breadcrumb
+                            li
+                                a(href='javascript:void(0);') Home
+                            li
+                                a(href='javascript:void(0);') Library
+                            li.active Data
+            // #END# Basic Examples
+            // With Icons
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | WITH ICONS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ol.breadcrumb
+                            li.active
+                                i.material-icons home
+                                |  Home
+                        ol.breadcrumb
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li.active
+                                i.material-icons library_books
+                                |  Library
+                        ol.breadcrumb
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li.active
+                                i.material-icons archive
+                                |  Data
+            // #END# With Icons
+        .row.clearfix
+            // With Material Design Colors
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use material design colors which examples are&nbsp;
+                                code .breadcrumb-col-pink, .breadcrumb-col-teal
+                                | .
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ol.breadcrumb.breadcrumb-col-pink
+                            li
+                                a(href='javascript:void(0);') Home
+                            li.active Library
+                        ol.breadcrumb.breadcrumb-col-cyan
+                            li
+                                a(href='javascript:void(0);') Home
+                            li
+                                a(href='javascript:void(0);') Library
+                            li.active Data
+                        ol.breadcrumb.breadcrumb-col-teal
+                            li
+                                a(href='javascript:void(0);') Home
+                            li
+                                a(href='javascript:void(0);') Library
+                            li
+                                a(href='javascript:void(0);') Data
+                            li.active File
+                        ol.breadcrumb.breadcrumb-col-orange
+                            li
+                                a(href='javascript:void(0);') Home
+                            li
+                                a(href='javascript:void(0);') Library
+                            li
+                                a(href='javascript:void(0);') Data
+                            li
+                                a(href='javascript:void(0);') File
+                            li.active Extensions
+            // #END# With Material Design Colors
+            // With Icons & Material Design Colors
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | WITH ICONS &amp; MATERIAL DESIGN COLORS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ol.breadcrumb.breadcrumb-col-pink
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li.active
+                                i.material-icons library_books
+                                |  Library
+                        ol.breadcrumb.breadcrumb-col-cyan
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li.active
+                                i.material-icons archive
+                                |  Data
+                        ol.breadcrumb.breadcrumb-col-teal
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons archive
+                                    |  Data
+                            li.active
+                                i.material-icons attachment
+                                |  File
+                        ol.breadcrumb.breadcrumb-col-orange
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons archive
+                                    |  Data
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons attachment
+                                    |  File
+                            li.active
+                                i.material-icons extension
+                                |  Extensions
+            // #END# With Icons & Material Design Colors
+        .row.clearfix
+            // Background With Material Design Colors
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BACKGROUND WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use material design colors which examples are&nbsp;
+                                code .breadcrumb-bg-pink, .breadcrumb-bg-teal
+                                | .
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ol.breadcrumb.breadcrumb-bg-pink
+                            li
+                                a(href='javascript:void(0);') Home
+                            li.active Library
+                        ol.breadcrumb.breadcrumb-bg-cyan
+                            li
+                                a(href='javascript:void(0);') Home
+                            li
+                                a(href='javascript:void(0);') Library
+                            li.active Data
+                        ol.breadcrumb.breadcrumb-bg-teal
+                            li
+                                a(href='javascript:void(0);') Home
+                            li
+                                a(href='javascript:void(0);') Library
+                            li
+                                a(href='javascript:void(0);') Data
+                            li.active File
+                        ol.breadcrumb.breadcrumb-bg-orange
+                            li
+                                a(href='javascript:void(0);') Home
+                            li
+                                a(href='javascript:void(0);') Library
+                            li
+                                a(href='javascript:void(0);') Data
+                            li
+                                a(href='javascript:void(0);') File
+                            li.active Extensions
+            // #END# Background With Material Design Colors
+            // Background With Icons & Material Design Colors
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BACKGROUND WITH ICONS &amp; MATERIAL DESIGN COLORS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ol.breadcrumb.breadcrumb-bg-pink
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li.active
+                                i.material-icons library_books
+                                |  Library
+                        ol.breadcrumb.breadcrumb-bg-cyan
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li.active
+                                i.material-icons archive
+                                |  Data
+                        ol.breadcrumb.breadcrumb-bg-teal
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons archive
+                                    |  Data
+                            li.active
+                                i.material-icons attachment
+                                |  File
+                        ol.breadcrumb.breadcrumb-bg-orange
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons archive
+                                    |  Data
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons attachment
+                                    |  File
+                            li.active
+                                i.material-icons extension
+                                |  Extensions
+            // #END# Background With Icons & Material Design Colors
+        // Alignments
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | ALIGNMENTS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .font-bold Align Left
+                        ol.breadcrumb.breadcrumb-bg-pink
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li.active
+                                i.material-icons library_books
+                                |  Library
+                        .align-center.m-t-15.font-bold Align Center
+                        ol.breadcrumb.breadcrumb-bg-cyan.align-center
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li.active
+                                i.material-icons archive
+                                |  Data
+                        .align-right.m-t-15.font-bold Align Right
+                        ol.breadcrumb.breadcrumb-bg-teal.align-right
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons home
+                                    |  Home
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons library_books
+                                    |  Library
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons archive
+                                    |  Data
+                            li.active
+                                i.material-icons attachment
+                                |  File
+        // #END# Alignments

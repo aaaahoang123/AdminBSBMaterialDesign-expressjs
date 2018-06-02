@@ -1,0 +1,289 @@
+extends ../layouts/master
+
+block title
+    | Typography
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 TYPOGRAPHY
+        // Body Copy
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BODY COPY
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        p.lead
+                            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                        p
+                            | Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+                        p
+                            | Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+        // #END# Body Copy
+        // Headings
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | HEADINGS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        h1 h1. AdminBSB Heading
+                        p.m-b-30
+                            | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        h2 h2. AdminBSB Heading
+                        p.m-t-10.m-b-30
+                            | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        h3 h3. AdminBSB Heading
+                        p.m-t-15.m-b-30
+                            | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        h4 h4. AdminBSB Heading
+                        p.m-t-15.m-b-30
+                            | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        h5 h5. AdminBSB Heading
+                        p.m-t-15.m-b-30
+                            | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        h6 h6. AdminBSB Heading
+                        p.m-t-15
+                            | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+        // #END# Headings
+        // Text Styles
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TEXT STYLES
+                            small
+                                | You can use classes which names are&nbsp;
+                                code .font-bold, .font-italic, .font-underline, .font-line-through, .font-overline
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Normal
+                                p Default text
+                                p.col-pink Text pink color
+                                p.col-cyan Text cyan color
+                                p.col-teal Text teal color
+                                p.col-orange Text orange color
+                                p.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Bold
+                                p.font-bold Default text
+                                p.font-bold.col-pink Text pink color
+                                p.font-bold.col-cyan Text cyan color
+                                p.font-bold.col-teal Text teal color
+                                p.font-bold.col-orange Text orange color
+                                p.font-bold.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Italic
+                                p.font-italic Default text
+                                p.font-italic.col-pink Text pink color
+                                p.font-italic.col-cyan Text cyan color
+                                p.font-italic.col-teal Text teal color
+                                p.font-italic.col-orange Text orange color
+                                p.font-italic.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Underline
+                                p.font-underline Default text
+                                p.font-underline.col-pink Text pink color
+                                p.font-underline.col-cyan Text cyan color
+                                p.font-underline.col-teal Text teal color
+                                p.font-underline.col-orange Text orange color
+                                p.font-underline.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Line Through
+                                p.font-line-through Default text
+                                p.font-line-through.col-pink Text pink color
+                                p.font-line-through.col-cyan Text cyan color
+                                p.font-line-through.col-teal Text teal color
+                                p.font-line-through.col-orange Text orange color
+                                p.font-line-through.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Overline
+                                p.font-overline Default text
+                                p.font-overline.col-pink Text pink color
+                                p.font-overline.col-cyan Text cyan color
+                                p.font-overline.col-teal Text teal color
+                                p.font-overline.col-orange Text orange color
+                                p.font-overline.col-blue-grey Text blue grey color
+        // #END# Text Styles
+        // Blockquotes
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BLOCKQUOTES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        blockquote.m-b-25
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                        blockquote
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                            footer
+                                | Someone famous in
+                                cite(title='Source Title') Source Title
+                        blockquote.blockquote-reverse
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                            footer
+                                | Someone famous in
+                                cite(title='Source Title') Source Title
+        // #END# Blockquotes
+        // Unordered List
+        .row.clearfix
+            .col-lg-4.col-md-4.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | UNORDERED LIST
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ul
+                            li Lorem ipsum dolor sit amet
+                            li Consectetur adipiscing elit
+                            li Integer molestie lorem at massa
+                            li Facilisis in pretium nisl aliquet
+                            li
+                                | Nulla volutpat aliquam velit
+                                ul
+                                    li Phasellus iaculis neque
+                                    li Purus sodales ultricies
+                                    li Vestibulum laoreet porttitor sem
+                                    li Ac tristique libero volutpat at
+                            li Faucibus porta lacus fringilla vel
+                            li Aenean sit amet erat nunc
+                            li Eget porttitor lorem
+            .col-lg-4.col-md-4.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | ORDERED LIST
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ol
+                            li Lorem ipsum dolor sit amet
+                            li Consectetur adipiscing elit
+                            li Integer molestie lorem at massa
+                            li Facilisis in pretium nisl aliquet
+                            li
+                                | Nulla volutpat aliquam velit
+                                ol
+                                    li Phasellus iaculis neque
+                                    li Purus sodales ultricies
+                                    li Vestibulum laoreet porttitor sem
+                                    li Ac tristique libero volutpat at
+                            li Faucibus porta lacus fringilla vel
+                            li Aenean sit amet erat nunc
+                            li Eget porttitor lorem
+            .col-lg-4.col-md-4.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | UNSTYLED LIST
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ul.list-unstyled
+                            li Lorem ipsum dolor sit amet
+                            li Consectetur adipiscing elit
+                            li Integer molestie lorem at massa
+                            li Facilisis in pretium nisl aliquet
+                            li
+                                | Nulla volutpat aliquam velit
+                                ul
+                                    li Phasellus iaculis neque
+                                    li Purus sodales ultricies
+                                    li Vestibulum laoreet porttitor sem
+                                    li Ac tristique libero volutpat at
+                            li Faucibus porta lacus fringilla vel
+                            li Aenean sit amet erat nunc
+                            li Eget porttitor lorem
+        // #END# Unordered List

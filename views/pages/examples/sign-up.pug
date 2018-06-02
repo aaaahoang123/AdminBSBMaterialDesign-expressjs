@@ -1,0 +1,69 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport')
+    title Sign Up | Bootstrap Based Admin Template - Material Design
+    // Favicon
+    link(rel='icon' href='favicon.ico' type='image/x-icon')
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' type='text/css')
+    // Bootstrap Core Css
+    link(href='/assets/plugins/bootstrap/css/bootstrap.css' rel='stylesheet')
+    // Waves Effect Css
+    link(href='/assets/plugins/node-waves/waves.css' rel='stylesheet')
+    // Animation Css
+    link(href='/assets/plugins/animate-css/animate.css' rel='stylesheet')
+    // Custom Css
+    link(href='/assets/css/style.css' rel='stylesheet')
+body.signup-page
+.signup-box
+    .logo
+        a(href='javascript:void(0);')
+            | Admin
+            b BSB
+        small Admin BootStrap Based - Material Design
+    .card
+        .body
+            form#sign_up(method='POST')
+                .msg Register a new membership
+                .input-group
+                    span.input-group-addon
+                        i.material-icons person
+                    .form-line
+                        input.form-control(type='text' name='namesurname' placeholder='Name Surname' required='' autofocus='')
+                .input-group
+                    span.input-group-addon
+                        i.material-icons email
+                    .form-line
+                        input.form-control(type='email' name='email' placeholder='Email Address' required='')
+                .input-group
+                    span.input-group-addon
+                        i.material-icons lock
+                    .form-line
+                        input.form-control(type='password' name='password' minlength='6' placeholder='Password' required='')
+                .input-group
+                    span.input-group-addon
+                        i.material-icons lock
+                    .form-line
+                        input.form-control(type='password' name='confirm' minlength='6' placeholder='Confirm Password' required='')
+                .form-group
+                    input#terms.filled-in.chk-col-pink(type='checkbox' name='terms')
+                    label(for='terms')
+                        | I read and agree to the
+                        a(href='javascript:void(0);') terms of usage
+                        | .
+                button.btn.btn-block.btn-lg.bg-pink.waves-effect(type='submit') SIGN UP
+                .m-t-25.m-b--5.align-center
+                    a(href='sign-in.html') You already have a membership?
+// Jquery Core Js
+script(src='/assets/plugins/jquery/jquery.min.js')
+// Bootstrap Core Js
+script(src='/assets/plugins/bootstrap/js/bootstrap.js')
+// Waves Effect Plugin Js
+script(src='/assets/plugins/node-waves/waves.js')
+// Validation Plugin Js
+script(src='/assets/plugins/jquery-validation/jquery.validate.js')
+// Custom Js
+script(src='/assets/js/admin.js')
+script(src='/assets/js/pages/examples/sign-up.js')

@@ -1,0 +1,167 @@
+extends ../../layouts/master
+
+block title
+    | Sortable and Nestable
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/nestable/jquery-nestable.css')
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/nestable/jquery.nestable.js')
+    script(type='text/javascript' src='/assets/js/pages/ui/sortable-nestable.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | SORTABLE &amp; NESTABLE
+                small
+                    | Taken by&nbsp;
+                    a(href='https://github.com/dbushell/Nestable' target='_blank') github.com/dbushell/Nestable
+        .row.clearfix
+            // Default Example
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DEFAULT EXAMPLE
+                            small Drag &amp; drop hierarchical list with mouse and touch compatibility
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .clearfix.m-b-20
+                            .dd
+                                ol.dd-list
+                                    li.dd-item(data-id='1')
+                                        .dd-handle Item 1
+                                    li.dd-item(data-id='2')
+                                        .dd-handle Item 2
+                                        ol.dd-list
+                                            li.dd-item(data-id='3')
+                                                .dd-handle Item 3
+                                            li.dd-item(data-id='4')
+                                                .dd-handle Item 4
+                                            li.dd-item(data-id='5')
+                                                .dd-handle Item 5
+                                                ol.dd-list
+                                                    li.dd-item(data-id='6')
+                                                        .dd-handle Item 6
+                                                    li.dd-item(data-id='7')
+                                                        .dd-handle Item 7
+                                                    li.dd-item(data-id='8')
+                                                        .dd-handle Item 8
+                                            li.dd-item(data-id='9')
+                                                .dd-handle Item 9
+                                            li.dd-item(data-id='10')
+                                                .dd-handle Item 10
+                                    li.dd-item(data-id='11')
+                                        .dd-handle Item 11
+                                    li.dd-item(data-id='12')
+                                        .dd-handle Item 12
+                        b Output JSON
+                        textarea.form-control.no-resize(cols='30' rows='3' readonly='')
+                            | [{&quot;id&quot;:1},{&quot;id&quot;:2,&quot;children&quot;:[{&quot;id&quot;:3},{&quot;id&quot;:4},{&quot;id&quot;:5,&quot;children&quot;:[{&quot;id&quot;:6},{&quot;id&quot;:7},{&quot;id&quot;:8}]},{&quot;id&quot;:9},{&quot;id&quot;:10}]},{&quot;id&quot;:11},{&quot;id&quot;:12}]
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DEFAULT EXAMPLE
+                            small Drag &amp; drop hierarchical list with mouse and touch compatibility
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .clearfix.m-b-20
+                            .dd.nestable-dark-theme
+                                ol.dd-list
+                                    li.dd-item(data-id='1')
+                                        .dd-handle Item 1
+                                    li.dd-item(data-id='2')
+                                        .dd-handle Item 2
+                                        ol.dd-list
+                                            li.dd-item(data-id='3')
+                                                .dd-handle Item 3
+                                            li.dd-item(data-id='4')
+                                                .dd-handle Item 4
+                                            li.dd-item(data-id='5')
+                                                .dd-handle Item 5
+                                                ol.dd-list
+                                                    li.dd-item(data-id='6')
+                                                        .dd-handle Item 6
+                                                    li.dd-item(data-id='7')
+                                                        .dd-handle Item 7
+                                                    li.dd-item(data-id='8')
+                                                        .dd-handle Item 8
+                                            li.dd-item(data-id='9')
+                                                .dd-handle Item 9
+                                            li.dd-item(data-id='10')
+                                                .dd-handle Item 10
+                                    li.dd-item(data-id='11')
+                                        .dd-handle Item 11
+                                    li.dd-item(data-id='12')
+                                        .dd-handle Item 12
+                        b Output JSON
+                        textarea.form-control.no-resize(cols='30' rows='3' readonly='')
+                            | [{&quot;id&quot;:1},{&quot;id&quot;:2,&quot;children&quot;:[{&quot;id&quot;:3},{&quot;id&quot;:4},{&quot;id&quot;:5,&quot;children&quot;:[{&quot;id&quot;:6},{&quot;id&quot;:7},{&quot;id&quot;:8}]},{&quot;id&quot;:9},{&quot;id&quot;:10}]},{&quot;id&quot;:11},{&quot;id&quot;:12}]
+            // #END# Default Example
+        // Draggable Handles
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DRAGGABLE HANDLES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .clearfix.m-b-20
+                            .dd.nestable-with-handle
+                                ol.dd-list
+                                    li.dd-item.dd3-item(data-id='13')
+                                        .dd-handle.dd3-handle
+                                        .dd3-content Item 13
+                                    li.dd-item.dd3-item(data-id='14')
+                                        .dd-handle.dd3-handle
+                                        .dd3-content Item 14
+                                    li.dd-item.dd3-item(data-id='15')
+                                        .dd-handle.dd3-handle
+                                        .dd3-content Item 15
+                                        ol.dd-list
+                                            li.dd-item.dd3-item(data-id='16')
+                                                .dd-handle.dd3-handle
+                                                .dd3-content Item 16
+                                            li.dd-item.dd3-item(data-id='17')
+                                                .dd-handle.dd3-handle
+                                                .dd3-content Item 17
+                                            li.dd-item.dd3-item(data-id='18')
+                                                .dd-handle.dd3-handle
+                                                .dd3-content Item 18
+                        b Output JSON
+                        textarea.form-control.no-resize(cols='30' rows='3' readonly='') [{&quot;id&quot;:13},{&quot;id&quot;:14},{&quot;id&quot;:15,&quot;children&quot;:[{&quot;id&quot;:17},{&quot;id&quot;:16},{&quot;id&quot;:18}]}]
+        // #END# Draggable Handles

@@ -1,0 +1,335 @@
+extends ../../layouts/master
+
+block title
+    | List Group
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 LIST GROUPS
+        .row.clearfix
+            // Basic Examples
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BASIC EXAMPLES
+                            small
+                                | The most basic list group is simply an unordered list with list items, and the proper classes.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ul.list-group
+                            li.list-group-item Cras justo odio
+                            li.list-group-item Dapibus ac facilisis in
+                            li.list-group-item Morbi leo risus
+                            li.list-group-item Porta ac consectetur ac
+                            li.list-group-item Vestibulum at eros
+            // #END# Basic Examples
+            // Badges
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BADGES
+                            small
+                                | Add the badges component to any list group item and it will automatically be positioned on the right.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ul.list-group
+                            li.list-group-item
+                                | Cras justo odio
+                                span.badge.bg-pink 14 new
+                            li.list-group-item
+                                | Dapibus ac facilisis in
+                                span.badge.bg-cyan 99 read
+                            li.list-group-item
+                                | Morbi leo risus
+                                span.badge.bg-teal 99+
+                            li.list-group-item
+                                | Porta ac consectetur ac
+                                span.badge.bg-orange 21
+                            li.list-group-item
+                                | Vestibulum at eros
+                                span.badge.bg-purple 18
+            // #END# Badges
+        .row.clearfix
+            // Linked Items
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | LINKED ITEMS
+                            small
+                                | Linkify list group items by using anchor tags instead of list items (that also means a parent&nbsp;
+                                code &lt;div&gt;
+                                |  instead of an&nbsp;
+                                code &lt;ul&gt;
+                                | ). No need for individual parents around each element.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .list-group
+                            a.list-group-item.active(href='javascript:void(0);')
+                                | Cras justo odio
+                            a.list-group-item(href='javascript:void(0);') Dapibus ac facilisis in
+                            a.list-group-item(href='javascript:void(0);') Morbi leo risus
+                            a.list-group-item(href='javascript:void(0);') Porta ac consectetur ac
+                            a.list-group-item(href='javascript:void(0);') Vestibulum at eros
+            // #END# Linked Items
+            // Button Items
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BUTTON ITEMS
+                            small
+                                | List group items may be buttons instead of list items (that also means a parent&nbsp;
+                                code &lt;div&gt;
+                                |  instead of an&nbsp;
+                                code &lt;ul&gt;
+                                | ). No need for individual parents around each element. Don&apos;t use the standard&nbsp;
+                                code .btn
+                                |  classes here.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .list-group
+                            button.list-group-item(type='button') Cras justo odio
+                            button.list-group-item(type='button') Dapibus ac facilisis in
+                            button.list-group-item(type='button') Morbi leo risus
+                            button.list-group-item(type='button') Porta ac consectetur ac
+                            button.list-group-item(type='button') Vestibulum at eros
+            // #END# Button Items
+        // Disabled Items
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DISABLED ITEMS
+                            small
+                                | Add&nbsp;
+                                code .disabled
+                                |  to a&nbsp;
+                                code .list-group-item
+                                |  to gray it out to appear disabled.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .list-group
+                            a.list-group-item.disabled(href='javascript:void(0);')
+                                | Cras justo odio
+                            a.list-group-item(href='javascript:void(0);') Dapibus ac facilisis in
+                            a.list-group-item(href='javascript:void(0);') Morbi leo risus
+                            a.list-group-item(href='javascript:void(0);') Porta ac consectetur ac
+                            a.list-group-item(href='javascript:void(0);') Vestibulum at eros
+        // #END# Disabled Items
+        .row.clearfix
+            // Contextal Classes
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CONTEXTUAL CLASSES
+                            small
+                                | Use contextual classes to style list items, default or linked. Also includes&nbsp;
+                                code .active
+                                |  state.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ul.list-group
+                            li.list-group-item.list-group-item-success Dapibus ac facilisis in
+                            li.list-group-item.list-group-item-info Cras sit amet nibh libero
+                            li.list-group-item.list-group-item-warning Porta ac consectetur ac
+                            li.list-group-item.list-group-item-danger Vestibulum at eros
+            // #END# Contextal Classes
+            // Contextual Classes With Linked Items
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CONTEXTUAL CLASSES WITH LINKED ITEMS
+                            small
+                                | Use contextual classes to style list items, default or linked. Also includes&nbsp;
+                                code .active
+                                |  state.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .list-group
+                            a.list-group-item.list-group-item-success(href='javascript:void(0);') Dapibus ac facilisis in
+                            a.list-group-item.list-group-item-info(href='javascript:void(0);') Cras sit amet nibh libero
+                            a.list-group-item.list-group-item-warning(href='javascript:void(0);') Porta ac consectetur ac
+                            a.list-group-item.list-group-item-danger(href='javascript:void(0);') Vestibulum at eros
+            // #END# Contextual Classes With Linked Items
+        .row.clearfix
+            // Colorful Items With Material Design Colors
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | COLORFUL ITEMS WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use material design colors which examples are&nbsp;
+                                code .list-group-bg-pink, .list-group-bg-cyan
+                                |  class
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        ul.list-group
+                            li.list-group-item.list-group-bg-pink Dapibus ac facilisis in
+                            li.list-group-item.list-group-bg-cyan Cras sit amet nibh libero
+                            li.list-group-item.list-group-bg-teal Porta ac consectetur ac
+                            li.list-group-item.list-group-bg-orange Vestibulum at eros
+            // #END# Colorful Items With Material Design Colors
+            // Custom Content
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CUSTOM CONTENT
+                            small Add nearly any HTML within, even for linked list groups like the one below.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .list-group
+                            a.list-group-item.list-group-bg-pink(href='javascript:void(0);') Dapibus ac facilisis in
+                            a.list-group-item.list-group-bg-cyan(href='javascript:void(0);') Cras sit amet nibh libero
+                            a.list-group-item.list-group-bg-teal(href='javascript:void(0);') Porta ac consectetur ac
+                            a.list-group-item.list-group-bg-orange(href='javascript:void(0);') Vestibulum at eros
+            // #END# Custom Content
+        // Contextual Classes With Linked Items
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CONTEXTUAL CLASSES WITH LINKED ITEMS
+                            small
+                                | Use contextual classes to style list items, default or linked. Also includes&nbsp;
+                                code .active
+                                |  state.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .list-group
+                            a.list-group-item.active(href='javascript:void(0);')
+                                h4.list-group-item-heading List group item heading
+                                p.list-group-item-text
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            a.list-group-item(href='javascript:void(0);')
+                                h4.list-group-item-heading List group item heading
+                                p.list-group-item-text
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            a.list-group-item(href='javascript:void(0);')
+                                h4.list-group-item-heading List group item heading
+                                p.list-group-item-text
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+        // #END# Contextual Classes With Linked Items

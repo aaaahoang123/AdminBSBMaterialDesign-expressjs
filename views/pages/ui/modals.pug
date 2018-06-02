@@ -1,0 +1,146 @@
+extends ../../layouts/master
+
+block title
+    | Modals
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+    script(type='text/javascript' src='/assets/js/pages/ui/modals.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 MODALS
+        // Modal Size Example
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MODAL SIZE EXAMPLE
+                            small
+                                | Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        button.btn.btn-default.waves-effect.m-r-20(type='button' data-toggle='modal' data-target='#defaultModal') MODAL - DEFAULT SIZE
+                        button.btn.btn-default.waves-effect.m-r-20(type='button' data-toggle='modal' data-target='#largeModal') MODAL - LARGE SIZE
+                        button.btn.btn-default.waves-effect(type='button' data-toggle='modal' data-target='#smallModal') MODAL - SMALL SIZE
+        // #END# Modal Size Example
+        // Material Design Colors
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use material design colors which examples are&nbsp;
+                                code .modal-col-pink
+                                |  class
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .button-demo.js-modal-buttons
+                            button.btn.bg-red.waves-effect(type='button' data-color='red') RED
+                            button.btn.bg-pink.waves-effect(type='button' data-color='pink') PINK
+                            button.btn.bg-purple.waves-effect(type='button' data-color='purple') PURPLE
+                            button.btn.bg-deep-purple.waves-effect(type='button' data-color='deep-purple') DEEP PURPLE
+                            button.btn.bg-indigo.waves-effect(type='button' data-color='indigo') INDIGO
+                            button.btn.bg-blue.waves-effect(type='button' data-color='blue') BLUE
+                            button.btn.bg-light-blue.waves-effect(type='button' data-color='light-blue') LIGHT BLUE
+                            button.btn.bg-cyan.waves-effect(type='button' data-color='cyan') CYAN
+                            button.btn.bg-teal.waves-effect(type='button' data-color='teal') TEAL
+                            button.btn.bg-green.waves-effect(type='button' data-color='green') GREEN
+                            button.btn.bg-light-green.waves-effect(type='button' data-color='light-green') LIGHT GREEN
+                            button.btn.bg-lime.waves-effect(type='button' data-color='lime') LIME
+                            button.btn.bg-yellow.waves-effect(type='button' data-color='yellow') YELLOW
+                            button.btn.bg-amber.waves-effect(type='button' data-color='amber') AMBER
+                            button.btn.bg-orange.waves-effect(type='button' data-color='orange') ORANGE
+                            button.btn.bg-deep-orange.waves-effect(type='button' data-color='deep-orange') DEEP ORANGE
+                            button.btn.bg-brown.waves-effect(type='button' data-color='brown') BROWN
+                            button.btn.bg-grey.waves-effect(type='button' data-color='grey') GREY
+                            button.btn.bg-blue-grey.waves-effect(type='button' data-color='blue-grey') BLUE GREY
+                            button.btn.bg-black.waves-effect.waves-light(type='button' data-color='black') BLACK
+        // #END# Material Design Colors
+        // Modal Dialogs ======================================================================================================================
+        // Default Size
+        #defaultModal.modal.fade(tabindex='-1' role='dialog')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h4#defaultModalLabel.modal-title Modal title
+                    .modal-body
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan
+                        | vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper.
+                        | Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus
+                        | nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.
+                        | Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.
+                    .modal-footer
+                        button.btn.btn-link.waves-effect(type='button') SAVE CHANGES
+                        button.btn.btn-link.waves-effect(type='button' data-dismiss='modal') CLOSE
+        // Large Size
+        #largeModal.modal.fade(tabindex='-1' role='dialog')
+            .modal-dialog.modal-lg(role='document')
+                .modal-content
+                    .modal-header
+                        h4#largeModalLabel.modal-title Modal title
+                    .modal-body
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan
+                        | vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper.
+                        | Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus
+                        | nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.
+                        | Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.
+                    .modal-footer
+                        button.btn.btn-link.waves-effect(type='button') SAVE CHANGES
+                        button.btn.btn-link.waves-effect(type='button' data-dismiss='modal') CLOSE
+        // Small Size
+        #smallModal.modal.fade(tabindex='-1' role='dialog')
+            .modal-dialog.modal-sm(role='document')
+                .modal-content
+                    .modal-header
+                        h4#smallModalLabel.modal-title Modal title
+                    .modal-body
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan
+                        | vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper.
+                        | Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus
+                        | nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.
+                        | Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.
+                    .modal-footer
+                        button.btn.btn-link.waves-effect(type='button') SAVE CHANGES
+                        button.btn.btn-link.waves-effect(type='button' data-dismiss='modal') CLOSE
+        // For Material Design Colors
+        #mdModal.modal.fade(tabindex='-1' role='dialog')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h4#mdModalLabel.modal-title Modal title
+                    .modal-body
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan
+                        | vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper.
+                        | Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus
+                        | nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.
+                        | Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.
+                    .modal-footer
+                        button.btn.btn-link.waves-effect(type='button') SAVE CHANGES
+                        button.btn.btn-link.waves-effect(type='button' data-dismiss='modal') CLOSE

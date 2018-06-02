@@ -1,0 +1,68 @@
+extends ../../layouts/master
+
+block title
+    | Range Slider
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/ion-rangeslider/css/ion.rangeSlider.css')
+    link(rel='stylesheet' href='/assets/plugins/ion-rangeslider/css/ion.rangeSlider.skinFlat.css')
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/ion-rangeslider/js/ion.rangeSlider.js')
+    script(type='text/javascript' src='/assets/js/pages/ui/range-sliders.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 RANGE SLIDERS
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | EXAMPLES
+                            small
+                                | Taken by Ion Range Slider which link is&nbsp;
+                                a(href='http://ionden.com/a/plugins/ion.rangeSlider/en.html' target='_blank') ionden.com/a/plugins/ion.rangeSlider/en.html
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .irs-demo
+                            b Start without params
+                            input#range_01(type='text' value='')
+                        .irs-demo
+                            b Set min value, max value and start point
+                            input#range_02(type='text' value='')
+                        .irs-demo
+                            b Set type to double and specify range, also showing grid and adding prefix &quot;$&quot;
+                            input#range_03(type='text' value='')
+                        .irs-demo
+                            b Set up range with negative values
+                            input#range_04(type='text' value='')
+                        .irs-demo
+                            b Using step 250
+                            input#range_05(type='text' value='')
+                        .irs-demo
+                            b Set up range with fractional values, using fractional step
+                            input#range_06(type='text' value='')
+                        .irs-demo
+                            b Set up you own numbers
+                            input#range_07(type='text' value='')
+                        .irs-demo
+                            b Using any strings as your values
+                            input#range_08(type='text' value='')
+                        .irs-demo
+                            b One more example with strings
+                            input#range_09(type='text' value='')
+                        .irs-demo
+                            b No prettify. Big numbers are ugly and unreadable
+                            input#range_10(type='text' value='')

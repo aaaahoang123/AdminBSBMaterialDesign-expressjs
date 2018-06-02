@@ -1,0 +1,398 @@
+extends ../../layouts/master
+
+block title
+    | Tabs
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 TABS
+        // Example Tab
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | EXAMPLE TAB
+                            small
+                                | Add quick, dynamic tab functionality to transition through panes of local content
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        // Nav tabs
+                        ul.nav.nav-tabs.tab-nav-right(role='tablist')
+                            li.active(role='presentation')
+                                a(href='#home' data-toggle='tab') HOME
+                            li(role='presentation')
+                                a(href='#profile' data-toggle='tab') PROFILE
+                            li(role='presentation')
+                                a(href='#messages' data-toggle='tab') MESSAGES
+                            li(role='presentation')
+                                a(href='#settings' data-toggle='tab') SETTINGS
+                        // Tab panes
+                        .tab-content
+                            #home.tab-pane.fade.in.active(role='tabpanel')
+                                b Home Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #profile.tab-pane.fade(role='tabpanel')
+                                b Profile Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #messages.tab-pane.fade(role='tabpanel')
+                                b Message Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #settings.tab-pane.fade(role='tabpanel')
+                                b Settings Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+        // #END# Example Tab
+        // Tabs With Only Icon Title
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TABS WITH ONLY ICON TITLE
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        // Nav tabs
+                        ul.nav.nav-tabs.tab-nav-right(role='tablist')
+                            li.active(role='presentation')
+                                a(href='#home_only_icon_title' data-toggle='tab')
+                                    i.material-icons home
+                            li(role='presentation')
+                                a(href='#profile_only_icon_title' data-toggle='tab')
+                                    i.material-icons face
+                            li(role='presentation')
+                                a(href='#messages_only_icon_title' data-toggle='tab')
+                                    i.material-icons email
+                            li(role='presentation')
+                                a(href='#settings_only_icon_title' data-toggle='tab')
+                                    i.material-icons settings
+                        // Tab panes
+                        .tab-content
+                            #home_only_icon_title.tab-pane.fade.in.active(role='tabpanel')
+                                b Home Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #profile_only_icon_title.tab-pane.fade(role='tabpanel')
+                                b Profile Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #messages_only_icon_title.tab-pane.fade(role='tabpanel')
+                                b Message Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #settings_only_icon_title.tab-pane.fade(role='tabpanel')
+                                b Settings Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+        // #END# Tabs With Only Icon Title
+        // Tabs With Icon Title
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TABS WITH ICON TITLE
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        // Nav tabs
+                        ul.nav.nav-tabs(role='tablist')
+                            li.active(role='presentation')
+                                a(href='#home_with_icon_title' data-toggle='tab')
+                                    i.material-icons home
+                                    |  HOME
+                            li(role='presentation')
+                                a(href='#profile_with_icon_title' data-toggle='tab')
+                                    i.material-icons face
+                                    |  PROFILE
+                            li(role='presentation')
+                                a(href='#messages_with_icon_title' data-toggle='tab')
+                                    i.material-icons email
+                                    |  MESSAGES
+                            li(role='presentation')
+                                a(href='#settings_with_icon_title' data-toggle='tab')
+                                    i.material-icons settings
+                                    |  SETTINGS
+                        // Tab panes
+                        .tab-content
+                            #home_with_icon_title.tab-pane.fade.in.active(role='tabpanel')
+                                b Home Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #profile_with_icon_title.tab-pane.fade(role='tabpanel')
+                                b Profile Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #messages_with_icon_title.tab-pane.fade(role='tabpanel')
+                                b Message Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+                            #settings_with_icon_title.tab-pane.fade(role='tabpanel')
+                                b Settings Content
+                                p
+                                    | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                    | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                    | pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                    | sadipscing mel.
+        // #END# Tabs With Icon Title
+        // Tabs With Material Design Colors
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TABS WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use Material Design Colors which examples are&nbsp;
+                                b .tab-col-red, .tab-col-pink
+                                |  class.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                ul.nav.nav-tabs.tab-col-pink(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_md_col_1' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_md_col_1' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_md_col_1' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_md_col_1' data-toggle='tab') SETTINGS
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                ul.nav.nav-tabs.tab-col-deep-orange(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_md_col_2' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_md_col_2' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_md_col_2' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_md_col_2' data-toggle='tab') SETTINGS
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                ul.nav.nav-tabs.tab-col-teal(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_md_col_3' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_md_col_3' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_md_col_3' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_md_col_3' data-toggle='tab') SETTINGS
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                ul.nav.nav-tabs.tab-col-orange(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_md_col_4' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_md_col_4' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_md_col_4' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_md_col_4' data-toggle='tab') SETTINGS
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                ul.nav.nav-tabs.tab-col-purple(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_md_col_5' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_md_col_5' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_md_col_5' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_md_col_5' data-toggle='tab') SETTINGS
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                ul.nav.nav-tabs.tab-col-blue-grey(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_md_col_6' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_md_col_6' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_md_col_6' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_md_col_6' data-toggle='tab') SETTINGS
+        // #END# Tabs With Material Design Colors
+        // Tabs With Custom Animations
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TABS WITH CUSTOM ANIMATIONS
+                            small
+                                | You can use different animation class. We used Animation.css which link is&nbsp;
+                                a(href='https://daneden.github.io/animate.css/' target='_blank') https://daneden.github.io/animate.css/
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                // Nav tabs
+                                ul.nav.nav-tabs.tab-nav-right(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_animation_1' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_animation_1' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_animation_1' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_animation_1' data-toggle='tab') SETTINGS
+                                // Tab panes
+                                .tab-content
+                                    #home_animation_1.tab-pane.animated.flipInX.active(role='tabpanel')
+                                        b Home Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+                                    #profile_animation_1.tab-pane.animated.flipInX(role='tabpanel')
+                                        b Profile Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+                                    #messages_animation_1.tab-pane.animated.flipInX(role='tabpanel')
+                                        b Message Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+                                    #settings_animation_1.tab-pane.animated.flipInX(role='tabpanel')
+                                        b Settings Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+                            .col-xs-12.col-sm-12.col-md-6.col-lg-6
+                                // Nav tabs
+                                ul.nav.nav-tabs.tab-nav-right(role='tablist')
+                                    li.active(role='presentation')
+                                        a(href='#home_animation_2' data-toggle='tab') HOME
+                                    li(role='presentation')
+                                        a(href='#profile_animation_2' data-toggle='tab') PROFILE
+                                    li(role='presentation')
+                                        a(href='#messages_animation_2' data-toggle='tab') MESSAGES
+                                    li(role='presentation')
+                                        a(href='#settings_animation_2' data-toggle='tab') SETTINGS
+                                // Tab panes
+                                .tab-content
+                                    #home_animation_2.tab-pane.animated.fadeInRight.active(role='tabpanel')
+                                        b Home Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+                                    #profile_animation_2.tab-pane.animated.fadeInRight(role='tabpanel')
+                                        b Profile Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+                                    #messages_animation_2.tab-pane.animated.fadeInRight(role='tabpanel')
+                                        b Message Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+                                    #settings_animation_2.tab-pane.animated.fadeInRight(role='tabpanel')
+                                        b Settings Content
+                                        p
+                                            | Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            | Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
+                                            | aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
+                                            | gubergren sadipscing mel.
+        // #END# Tabs With Custom Animations

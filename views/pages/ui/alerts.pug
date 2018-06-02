@@ -1,0 +1,172 @@
+extends ../../layouts/master
+
+block title
+    | Alerts
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 ALERTS
+        // Basic Alerts
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BASIC ALERTS
+                            small
+                                | Wrap any text and an optional dismiss button in&nbsp;
+                                code .alert
+                                |  and one of the four contextual classes (e.g.,&nbsp;
+                                code .alert-success
+                                | ) for basic alert messages.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .alert.alert-success
+                            strong Well done!
+                            |  You successfully read this important alert message.
+                        .alert.alert-info
+                            strong Heads up!
+                            |  This alert needs your attention, but it&apos;s not super important.
+                        .alert.alert-warning
+                            strong Warning!
+                            |  Better check yourself, you&apos;re not looking too good.
+                        .alert.alert-danger
+                            strong Oh snap!
+                            |  Change a few things up and try submitting again.
+        // #END# Basic Alerts
+        // Material Design Alerts
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MATERIAL DESIGN ALERTS
+                            small
+                                | You can use material design color with&nbsp;
+                                code .bg-red, .bg-pink
+                                |  class
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .alert.bg-pink
+                            | Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                        .alert.bg-orange
+                            | Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                        .alert.bg-teal
+                            | Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                        .alert.bg-green
+                            | Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                        .alert.bg-red
+                            | Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+        // #END# Material Design Alerts
+        // Dismissible Alerts
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DISMISSIBLE ALERTS
+                            small
+                                | Build on any alert by adding an optional&nbsp;
+                                code .alert-dismissible
+                                |  and close button.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .alert.alert-warning.alert-dismissible(role='alert')
+                            button.close(type='button' data-dismiss='alert' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                            |                         Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                        .alert.bg-pink.alert-dismissible(role='alert')
+                            button.close(type='button' data-dismiss='alert' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                            |                         Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                        .alert.bg-teal.alert-dismissible(role='alert')
+                            button.close(type='button' data-dismiss='alert' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                            |                         Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                        .alert.bg-green.alert-dismissible(role='alert')
+                            button.close(type='button' data-dismiss='alert' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                            |                         Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+        // #END# Dismissible Alerts
+        // Links In Alerts
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | LINKS IN ALERTS
+                            small
+                                | Use the&nbsp;
+                                code .alert-link
+                                |  utility class to quickly provide matching colored links within any alert.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .alert.alert-success
+                            strong Well done!
+                            |  You successfully read
+                            a.alert-link(href='javascript:void(0);') this important alert message
+                            | .
+                        .alert.alert-info
+                            strong Heads up!
+                            |  This
+                            a.alert-link(href='javascript:void(0);') alert needs your attention
+                            | , but it&apos;s not super important.
+                        .alert.alert-warning
+                            strong Warning!
+                            |  Better check yourself, you&apos;re
+                            a.alert-link(href='javascript:void(0);') not looking too good
+                            | .
+                        .alert.alert-danger
+                            strong Oh snap!
+                            a.alert-link(href='javascript:void(0);') Change a few things up
+                            |  and try submitting again.
+                        .alert.bg-pink
+                            | Lorem ipsum dolor sit amet, id fugit tollit pro, illud nostrud aliquando ad est, quo esse dolorum id
+                            a.alert-link(href='javascript:void(0);') alert link
+                            | .
+        // #END# Links In Alerts

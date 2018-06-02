@@ -1,0 +1,105 @@
+extends ../../layouts/master
+
+block title
+    | Carousel
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | CAROUSEL
+                small
+                    | All images taken from&nbsp;
+                    a(href='https://unsplash.com/' target='_blank') unsplash.com
+        .row.clearfix
+            // Basic Example
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 BASIC EXAMPLE
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #carousel-example-generic.carousel.slide(data-ride='carousel')
+                            // Indicators
+                            ol.carousel-indicators
+                                li.active(data-target='#carousel-example-generic' data-slide-to='0')
+                                li(data-target='#carousel-example-generic' data-slide-to='1')
+                                li(data-target='#carousel-example-generic' data-slide-to='2')
+                            // Wrapper for slides
+                            .carousel-inner(role='listbox')
+                                .item.active
+                                    img(src='/assets/images/image-gallery/11.jpg')
+                                .item
+                                    img(src='/assets/images/image-gallery/12.jpg')
+                                .item
+                                    img(src='/assets/images/image-gallery/19.jpg')
+                            // Controls
+                            a.left.carousel-control(href='#carousel-example-generic' role='button' data-slide='prev')
+                                span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                span.sr-only Previous
+                            a.right.carousel-control(href='#carousel-example-generic' role='button' data-slide='next')
+                                span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                span.sr-only Next
+            // #END# Basic Example
+            // With Captions
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 WITH CAPTIONS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #carousel-example-generic_2.carousel.slide(data-ride='carousel')
+                            // Indicators
+                            ol.carousel-indicators
+                                li.active(data-target='#carousel-example-generic_2' data-slide-to='0')
+                                li(data-target='#carousel-example-generic_2' data-slide-to='1')
+                                li(data-target='#carousel-example-generic_2' data-slide-to='2')
+                            // Wrapper for slides
+                            .carousel-inner(role='listbox')
+                                .item.active
+                                    img(src='/assets/images/image-gallery/10.jpg')
+                                    .carousel-caption
+                                        h3 First slide label
+                                        p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                .item
+                                    img(src='/assets/images/image-gallery/12.jpg')
+                                    .carousel-caption
+                                        h3 Second slide label
+                                        p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                .item
+                                    img(src='/assets/images/image-gallery/19.jpg')
+                                    .carousel-caption
+                                        h3 Third slide label
+                                        p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                            // Controls
+                            a.left.carousel-control(href='#carousel-example-generic_2' role='button' data-slide='prev')
+                                span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                span.sr-only Previous
+                            a.right.carousel-control(href='#carousel-example-generic_2' role='button' data-slide='next')
+                                span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                span.sr-only Next
+            // #END# With Captions

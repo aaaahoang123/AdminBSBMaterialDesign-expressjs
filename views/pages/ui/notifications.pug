@@ -1,0 +1,248 @@
+extends ../../layouts/master
+
+block title
+    | Notifications
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+    script(type='text/javascript' src='/assets/js/pages/ui/notifications.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | NOTIFICATIONS
+                small
+                    | Taken by Bootstrap Notification&nbsp;
+                    a(href='https://github.com/mouse0270/bootstrap-notify' target='_blank') github.com/mouse0270/bootstrap-notify
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | NOTIFICATION POSITIONS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-primary.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='bg-black')
+                                    | TOP LEFT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-primary.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='center' data-animate-enter='' data-animate-exit='' data-color-name='bg-black')
+                                    | TOP CENTER
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-primary.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='right' data-animate-enter='' data-animate-exit='' data-color-name='bg-black')
+                                    | TOP RIGHT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-primary.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='bg-black')
+                                    | BOTTOM LEFT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-primary.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='center' data-animate-enter='' data-animate-exit='' data-color-name='bg-black')
+                                    | BOTTOM CENTER
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-primary.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='right' data-animate-enter='' data-animate-exit='' data-color-name='bg-black')
+                                    | BOTTOM RIGHT
+        // Notification Types
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | NOTIFICATION TYPES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-danger.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='alert-danger')
+                                    | DANGER
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-success.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='center' data-animate-enter='' data-animate-exit='' data-color-name='alert-success')
+                                    | SUCCESS
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-warning.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='right' data-animate-enter='' data-animate-exit='' data-color-name='alert-warning')
+                                    | WARNING
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.btn-info.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='alert-info')
+                                    | INFO
+        // #END# Notification Types
+        // With Material Design Colors
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use the material design colors which example class are&nbsp;
+                                code .bg-pink, .bg-green
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-red.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='bg-red')
+                                    | RED
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-green.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='center' data-animate-enter='' data-animate-exit='' data-color-name='bg-green')
+                                    | GREEN
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-orange.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='right' data-animate-enter='' data-animate-exit='' data-color-name='bg-orange')
+                                    | ORANGE
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-blue.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='bg-blue')
+                                    | BLUE
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-teal.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='right' data-animate-enter='' data-animate-exit='' data-color-name='bg-teal')
+                                    | TEAL
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-cyan.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='center' data-animate-enter='' data-animate-exit='' data-color-name='bg-cyan')
+                                    | CYAN
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-pink.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='bg-pink')
+                                    | PINK
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-purple.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='center' data-animate-enter='' data-animate-exit='' data-color-name='bg-purple')
+                                    | PURPLE
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-blue-grey.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='right' data-animate-enter='' data-animate-exit='' data-color-name='bg-blue-grey')
+                                    | BLUE GREY
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-deep-orange.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='left' data-animate-enter='' data-animate-exit='' data-color-name='bg-deep-orange')
+                                    | DEEP ORANGE
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-light-green.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='center' data-animate-enter='' data-animate-exit='' data-color-name='bg-light-green')
+                                    | LIGHT GREEN
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-black.btn-block.waves-effect(type='button' data-placement-from='bottom' data-placement-align='right' data-animate-enter='' data-animate-exit='' data-color-name='bg-black')
+                                    | BLACK
+        // #END# With Material Design Colors
+        // Notification Animations
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | NOTIFICATION ANIMATIONS
+                            small
+                                | You can use&nbsp;
+                                a(href='https://daneden.github.io/animate.css/' target='_blank') Animate.css
+                                |  class for animating.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-pink.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated fadeIn' data-animate-exit='animated fadeOut' data-color-name='bg-black')
+                                    | FADE IN/OUT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-pink.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated fadeInLeft' data-animate-exit='animated fadeOutLeft' data-color-name='bg-black')
+                                    | FADE IN/OUT LEFT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-pink.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='right' data-animate-enter='animated fadeInRight' data-animate-exit='animated fadeOutRight' data-color-name='bg-black')
+                                    | FADE IN/OUT RIGHT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-pink.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated fadeInUp' data-animate-exit='animated fadeOutUp' data-color-name='bg-black')
+                                    | FADE IN/OUT UP
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-pink.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated fadeInDown' data-animate-exit='animated fadeOutDown' data-color-name='bg-black')
+                                    | FADE IN/OUT DOWN
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-cyan.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated bounceIn' data-animate-exit='animated bounceOut' data-color-name='bg-black')
+                                    | BOUNCE IN/OUT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-cyan.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated bounceInLeft' data-animate-exit='animated bounceOutLeft' data-color-name='bg-black')
+                                    | BOUNCE IN/OUT LEFT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-cyan.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='right' data-animate-enter='animated bounceInRight' data-animate-exit='animated bounceOutRight' data-color-name='bg-black')
+                                    | BOUNCE IN/OUT RIGHT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-cyan.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated bounceInUp' data-animate-exit='animated bounceOutUp' data-color-name='bg-black')
+                                    | BOUNCE IN/OUT UP
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-cyan.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated bounceInDown' data-animate-exit='animated bounceOutDown' data-color-name='bg-black')
+                                    | BOUNCE IN/OUT DOWN
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-teal.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated rotateIn' data-animate-exit='animated rotateOut' data-color-name='bg-black')
+                                    | ROTATE IN/OUT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-teal.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated rotateInUpLeft' data-animate-exit='animated rotateOutUpLeft' data-color-name='bg-black')
+                                    | ROTATE IN/OUT UP LEFT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-teal.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='right' data-animate-enter='animated rotateInUpRight' data-animate-exit='animated rotateOutUpRight' data-color-name='bg-black')
+                                    | ROTATE IN/OUT UP RIGHT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-teal.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated rotateInDownLeft' data-animate-exit='animated rotateOutDownLeft' data-color-name='bg-black')
+                                    | ROTATE IN/OUT DOWN LEFT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-teal.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='right' data-animate-enter='animated rotateInDownRight' data-animate-exit='animated rotateOutDownRight' data-color-name='bg-black')
+                                    | ROTATE IN/OUT DOWN RIGHT
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-orange.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated zoomIn' data-animate-exit='animated zoomOut' data-color-name='bg-black')
+                                    | ZOOM IN/OUT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-orange.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated zoomInLeft' data-animate-exit='animated zoomOutLeft' data-color-name='bg-black')
+                                    | ZOOM IN/OUT LEFT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-orange.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='right' data-animate-enter='animated zoomInRight' data-animate-exit='animated zoomOutRight' data-color-name='bg-black')
+                                    | ZOOM IN/OUT RIGHT
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-orange.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated zoomInUp' data-animate-exit='animated zoomOutUp' data-color-name='bg-black')
+                                    | ZOOM IN/OUT UP
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-orange.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated zoomInDown' data-animate-exit='animated zoomOutDown' data-color-name='bg-black')
+                                    | ZOOM IN/OUT DOWN
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-purple.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated flipInX' data-animate-exit='animated flipOutX' data-color-name='bg-black')
+                                    | FLIP IN/OUT X
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-purple.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='left' data-animate-enter='animated flipInY' data-animate-exit='animated flipOutY' data-color-name='bg-black')
+                                    | FLIP IN/OUT Y
+                        .row.clearfix.jsdemo-notification-button
+                            .col-xs-12.col-sm-6.col-md-3.col-lg-2
+                                button.btn.bg-indigo.btn-block.waves-effect(type='button' data-placement-from='top' data-placement-align='right' data-animate-enter='animated lightSpeedIn' data-animate-exit='animated lightSpeedOut' data-color-name='bg-black')
+                                    | LIGHT SPEED IN/OUT
+        // #END# Notification Animations

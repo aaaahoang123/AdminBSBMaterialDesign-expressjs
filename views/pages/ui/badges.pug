@@ -1,0 +1,142 @@
+extends ../../layouts/master
+
+block title
+    | Badges
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 BADGES
+        // Button Examples
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BUTTON EXAMPLES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.btn-success.btn-lg.btn-block.waves-effect(type='button')
+                                    | SUCCESS
+                                    span.badge 4
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.btn-primary.btn-lg.btn-block.waves-effect(type='button')
+                                    | PRIMARY
+                                    span.badge 10+
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.btn-danger.btn-lg.btn-block.waves-effect(type='button')
+                                    | DANGER
+                                    span.badge 8
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.btn-warning.btn-lg.btn-block.waves-effect(type='button')
+                                    | WARNING
+                                    span.badge 3
+        // #END# Button Examples
+        // With Material Design Colors
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BUTTON EXAMPLES WITH MATERIAL DESIGN COLORS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-green.btn-lg.btn-block.waves-effect(type='button')
+                                    | GREEN
+                                    span.badge 2
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-blue.btn-lg.btn-block.waves-effect(type='button')
+                                    | BLUE
+                                    span.badge 10+
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-red.btn-lg.btn-block.waves-effect(type='button')
+                                    | RED
+                                    span.badge 12
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-orange.btn-lg.btn-block.waves-effect(type='button')
+                                    | ORANGE
+                                    span.badge 5
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-pink.btn-lg.btn-block.waves-effect(type='button')
+                                    | PINK
+                                    span.badge 14
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-cyan.btn-lg.btn-block.waves-effect(type='button')
+                                    | CYAN
+                                    span.badge 99+
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-teal.btn-lg.btn-block.waves-effect(type='button')
+                                    | TEAL
+                                    span.badge 26
+                            .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                button.btn.bg-purple.btn-lg.btn-block.waves-effect(type='button')
+                                    | PURPLE
+                                    span.badge 47
+        // #END# With Material Design Colors
+        // List Example
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | LIST EXAMPLE
+                            small
+                                | You can also put badge to list and use the material design colors which example classes are&nbsp;
+                                code .bg-pink, bg-green
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .list-group
+                            a.list-group-item(href='javascript:void(0);')
+                                span.badge.bg-pink 14 New
+                                |  Cras justo odio
+                            a.list-group-item(href='javascript:void(0);')
+                                span.badge.bg-cyan 99 Unread
+                                | Dapibus ac facilisis in
+                            a.list-group-item(href='javascript:void(0);')
+                                span.badge.bg-teal 99+
+                                | Morbi leo risus
+                            a.list-group-item(href='javascript:void(0);')
+                                span.badge.bg-orange 21
+                                | Porta ac consectetur ac
+                            a.list-group-item(href='javascript:void(0);')
+                                span.badge.bg-purple 18
+                                | Vestibulum at eros
+        // #END# List Example

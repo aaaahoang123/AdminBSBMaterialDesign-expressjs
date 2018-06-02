@@ -1,0 +1,270 @@
+extends ../../layouts/master
+
+block title
+    | Pagination
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 PAGINATION
+        // Default Pagination
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DEFAULT PAGINATION
+                            small
+                                | Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        nav
+                            ul.pagination
+                                li
+                                    a.waves-effect(href='javascript:void(0);')
+                                        i.material-icons chevron_left
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 1
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 2
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 3
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 4
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 5
+                                li
+                                    a.waves-effect(href='javascript:void(0);')
+                                        i.material-icons chevron_right
+                .card
+                    .header
+                        h2
+                            | DISABLED AND ACTIVE STATES
+                            small
+                                | Links are customizable for different circumstances. Use&nbsp;
+                                code .disabled
+                                |  for unclickable links and&nbsp;
+                                code .active
+                                |  to indicate the current page.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        nav
+                            ul.pagination
+                                li.disabled
+                                    a(href='javascript:void(0);')
+                                        i.material-icons chevron_left
+                                li.active
+                                    a(href='javascript:void(0);') 1
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 2
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 3
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 4
+                                li
+                                    a.waves-effect(href='javascript:void(0);') 5
+                                li
+                                    a.waves-effect(href='javascript:void(0);')
+                                        i.material-icons chevron_right
+                .card
+                    .header
+                        h2
+                            | SIZING
+                            small
+                                | Fancy larger or smaller pagination? Add&nbsp;
+                                code .pagination-lg
+                                |  or&nbsp;
+                                code .pagination-sm
+                                |  for additional sizes.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-xs-12.col-sm-6.col-md-4.col-lg-4
+                                b Large
+                                nav
+                                    ul.pagination.pagination-lg
+                                        li
+                                            a.waves-effect(href='javascript:void(0);')
+                                                i.material-icons chevron_left
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 1
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 2
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 3
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 4
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 5
+                                        li
+                                            a.waves-effect(href='javascript:void(0);')
+                                                i.material-icons chevron_right
+                            .col-xs-12.col-sm-6.col-md-4.col-lg-4
+                                b Default
+                                nav
+                                    ul.pagination
+                                        li
+                                            a.waves-effect(href='javascript:void(0);')
+                                                i.material-icons chevron_left
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 1
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 2
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 3
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 4
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 5
+                                        li
+                                            a.waves-effect(href='javascript:void(0);')
+                                                i.material-icons chevron_right
+                            .col-xs-12.col-sm-6.col-md-4.col-lg-4
+                                b Small
+                                nav
+                                    ul.pagination.pagination-sm
+                                        li
+                                            a.waves-effect(href='javascript:void(0);')
+                                                i.material-icons chevron_left
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 1
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 2
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 3
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 4
+                                        li
+                                            a.waves-effect(href='javascript:void(0);') 5
+                                        li
+                                            a.waves-effect(href='javascript:void(0);')
+                                                i.material-icons chevron_right
+        // #END# Default Pagination
+        .block-header
+            h2 PAGER
+        // Default Example
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DEFAULT EXAMPLE
+                            small By default, the pager centers links.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        nav
+                            ul.pager
+                                li
+                                    a.waves-effect(href='javascript:void(0);') Previous
+                                li
+                                    a.waves-effect(href='javascript:void(0);') Next
+        // #END# Default Example
+        // Align Link
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | ALIGNED LINKS
+                            small Alternatively, you can align each link to the sides:
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        nav
+                            ul.pager
+                                li.previous
+                                    a.waves-effect(href='javascript:void(0);')
+                                        span(aria-hidden='true') &larr;
+                                        |  Older
+                                li.next
+                                    a.waves-effect(href='javascript:void(0);')
+                                        | Newer
+                                        span(aria-hidden='true') &rarr;
+        // #END# Align Links
+        // Optional Disabled State
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | OPTIONAL DISABLED STATE
+                            small
+                                | Pager links also use the general&nbsp;
+                                code .disabled
+                                |  utility class from the pagination.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        nav
+                            ul.pager
+                                li.previous.disabled
+                                    a(href='javascript:void(0);')
+                                        span(aria-hidden='true') &larr;
+                                        |  Older
+                                li.next
+                                    a.waves-effect(href='javascript:void(0);')
+                                        | Newer
+                                        span(aria-hidden='true') &rarr;
+        // #END# Optional Disabled State

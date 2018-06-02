@@ -1,0 +1,147 @@
+extends ../../../layouts/master
+
+block title
+    | Cards
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/waitme/waitMe.js')
+block content
+    .container-fluid
+        .block-header
+            h2 BASIC CARD
+        // Basic Card
+        .row.clearfix
+            .col-lg-4.col-md-4.col-sm-6.col-xs-12
+                .card
+                    .header
+                        h2
+                            | Basic Card Title
+                            small Description text here...
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        | Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+            .col-lg-4.col-md-4.col-sm-6.col-xs-12
+                .card
+                    .header
+                        h2
+                            | Basic Card Title
+                            small Description text here...
+                        ul.header-dropdown.m-r--5
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons mic
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        | Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+            .col-lg-4.col-md-4.col-sm-6.col-xs-12
+                .card
+                    .header
+                        h2
+                            | Basic Card Title
+                            small Description text here...
+                        ul.header-dropdown.m-r-0
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons info_outline
+                            li
+                                a(href='javascript:void(0);')
+                                    i.material-icons help_outline
+                    .body
+                        | Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+        // #END# Basic Card
+        // Basic Card - With Loading
+        .block-header
+            h2
+                | BASIC CARD - WITH LOADING
+                small
+                    | Please click the refresh button right top of cards you want to activate loading. Taken from&nbsp;
+                    a(href='https://github.com/vadimsva/waitMe' target='_blank') https://github.com/vadimsva/waitMe
+        .row.clearfix
+            .col-lg-4.col-md-4.col-sm-6.col-xs-12
+                .card
+                    .header
+                        h2
+                            | Basic Card Title
+                            small Description text here...
+                        ul.header-dropdown.m-r--5
+                            li
+                                a(href='javascript:void(0);' data-toggle='cardloading' data-loading-effect='timer')
+                                    i.material-icons loop
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        | Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+            .col-lg-4.col-md-4.col-sm-6.col-xs-12
+                .card
+                    .header
+                        h2
+                            | Basic Card Title
+                            small Description text here...
+                        ul.header-dropdown.m-r--5
+                            li
+                                a(href='javascript:void(0);' data-toggle='cardloading' data-loading-effect='ios')
+                                    i.material-icons loop
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        | Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+            .col-lg-4.col-md-4.col-sm-6.col-xs-12
+                .card
+                    .header
+                        h2
+                            | Basic Card Title
+                            small Description text here...
+                        ul.header-dropdown.m-r--5
+                            li
+                                a(href='javascript:void(0);' data-toggle='cardloading' data-loading-effect='pulse')
+                                    i.material-icons loop
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        | Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+        // #END# Basic Card - With Loading

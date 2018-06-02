@@ -1,0 +1,421 @@
+extends ../layouts/master
+
+block title
+    | Helper Classes
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 HELPER CLASSES
+        // Text Styles
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TEXT STYLES
+                            small
+                                | You can use classes which names are&nbsp;
+                                code .font-bold, .font-italic, .font-underline, .font-line-through, .font-overline
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Normal
+                                p Default text
+                                p.col-pink Text pink color
+                                p.col-cyan Text cyan color
+                                p.col-teal Text teal color
+                                p.col-orange Text orange color
+                                p.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Bold
+                                p.font-bold Default text
+                                p.font-bold.col-pink Text pink color
+                                p.font-bold.col-cyan Text cyan color
+                                p.font-bold.col-teal Text teal color
+                                p.font-bold.col-orange Text orange color
+                                p.font-bold.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Italic
+                                p.font-italic Default text
+                                p.font-italic.col-pink Text pink color
+                                p.font-italic.col-cyan Text cyan color
+                                p.font-italic.col-teal Text teal color
+                                p.font-italic.col-orange Text orange color
+                                p.font-italic.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Underline
+                                p.font-underline Default text
+                                p.font-underline.col-pink Text pink color
+                                p.font-underline.col-cyan Text cyan color
+                                p.font-underline.col-teal Text teal color
+                                p.font-underline.col-orange Text orange color
+                                p.font-underline.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Line Through
+                                p.font-line-through Default text
+                                p.font-line-through.col-pink Text pink color
+                                p.font-line-through.col-cyan Text cyan color
+                                p.font-line-through.col-teal Text teal color
+                                p.font-line-through.col-orange Text orange color
+                                p.font-line-through.col-blue-grey Text blue grey color
+                            .col-lg-2.col-md-2.col-sm-6.col-xs-6
+                                p
+                                    b Overline
+                                p.font-overline Default text
+                                p.font-overline.col-pink Text pink color
+                                p.font-overline.col-cyan Text cyan color
+                                p.font-overline.col-teal Text teal color
+                                p.font-overline.col-orange Text orange color
+                                p.font-overline.col-blue-grey Text blue grey color
+        // #END# Text Styles
+        // Font Sizes
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | FONT SIZES
+                            small
+                                | You can use the classes which samples are&nbsp;
+                                code .font-6, .font-10, .font-24
+                                |  The number of can use between 6 - 50px which are near the
+                                b .font-
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-2
+                                .font-6 font-6
+                            .col-md-2
+                                .font-10 font-10
+                            .col-md-2
+                                .font-12 font-12
+                            .col-md-2
+                                .font-15 font-15
+                            .col-md-2
+                                .font-20 font-20
+                            .col-md-2
+                                .font-24 font-24
+                        .row.clearfix
+                            .col-md-2
+                                .font-32 font-32
+                            .col-md-2
+                                .font-40 font-40
+                            .col-md-2
+                                .font-42 font-42
+                            .col-md-2
+                                .font-45 font-45
+                            .col-md-2
+                                .font-48 font-48
+                            .col-md-2
+                                .font-50 font-50
+        // #END# Font Sizes
+        // Text Aligns
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TEXT ALIGNS
+                            small
+                                | You can use classes which names are&nbsp;
+                                code .align-left, .align-center, .align-right, .align-justify
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-3
+                                p.align-left
+                                    b Align Left
+                                .align-left
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .col-md-3
+                                p.align-center
+                                    b Align Center
+                                .align-center
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .col-md-3
+                                p.align-right
+                                    b Align Right
+                                .align-right
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            .col-md-3
+                                p.align-justify
+                                    b Align Justify
+                                .align-justify
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        // #END# Text Aligns
+        // Margin & Padding Spaces
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MARGIN &amp; PADDING SPACES
+                            small
+                                | You can use classes which names are&nbsp;
+                                code .m-t-10, .m-t--10, .m-r-5, .p-t-10, .p-b-5
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        p
+                            b Margins
+                        .row.clearfix
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold T
+                                | op
+                                span.col-red.font-bold 10
+                                | px &rarr;
+                                code .m-t-10
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold T
+                                | op
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .m-t-0
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold T
+                                | op
+                                span.col-red.font-bold -10
+                                | px &rarr;
+                                code .m-t--10
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold L
+                                | eft
+                                span.col-red.font-bold 35
+                                | px &rarr;
+                                code .m-l-35
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold L
+                                | eft
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .m-l-0
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold L
+                                | eft
+                                span.col-red.font-bold -35
+                                | px &rarr;
+                                code .m-l--35
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold B
+                                | ottom
+                                span.col-red.font-bold 15
+                                | px &rarr;
+                                code .m-b-15
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold B
+                                | ottom
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .m-b-0
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold B
+                                | ottom
+                                span.col-red.font-bold -20
+                                | px &rarr;
+                                code .m-b--20
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold R
+                                | ight
+                                span.col-red.font-bold 30
+                                | px &rarr;
+                                code .m-r-30
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold R
+                                | ight
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .m-r-0
+                            .col-md-2
+                                span.col-red.font-bold M
+                                | argin
+                                span.col-red.font-bold R
+                                | ight
+                                span.col-red.font-bold -30
+                                | px &rarr;
+                                code .m-r--30
+                            .col-md-2
+                                span.col-red.font-bold ALL M
+                                | argin
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .margin-0
+                        p.m-t-25
+                            b Paddings
+                        .row.clearfix
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold T
+                                | op
+                                span.col-red.font-bold 10
+                                | px &rarr;
+                                code .p-t-10
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold T
+                                | op
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .p-t-0
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold L
+                                | eft
+                                span.col-red.font-bold 35
+                                | px &rarr;
+                                code .p-l-35
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold L
+                                | eft
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .p-l-0
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold B
+                                | ottom
+                                span.col-red.font-bold 15
+                                | px &rarr;
+                                code .p-b-15
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold B
+                                | ottom
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .p-b-0
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold R
+                                | ight
+                                span.col-red.font-bold 30
+                                | px &rarr;
+                                code .p-r-30
+                            .col-md-2
+                                span.col-red.font-bold P
+                                | adding
+                                span.col-red.font-bold R
+                                | ight
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .p-r-0
+                            .col-md-2
+                                span.col-red.font-bold ALL P
+                                | adding
+                                span.col-red.font-bold 0
+                                | px &rarr;
+                                code .padding-0
+        // #END# Margin & Padding Spaces
+        // Special Class For User Entered Browser
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | SPECIAL CLASSES FOR EVERY BROWSERS
+                            small
+                                | When the user start the usage this theme, we put the browser info inside the
+                                code html
+                                |  as class
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        | Putting classes are
+                        code .ie10, .ie11, .edge, .opera, .chrome, .firefox, .safari
+                        |  to class inside of
+                        code html
+                        |  element. So you can create new classes for run only you specified browser(s).
+                        p.m-t-25
+                            b Example
+                        pre.
+
+                        p &nbsp;
+        // #END# Special Class For User Entered Browser

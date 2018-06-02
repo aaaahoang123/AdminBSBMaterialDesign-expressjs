@@ -1,0 +1,130 @@
+extends ../../layouts/master
+
+block title
+    | Flot Chart
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/flot-charts/jquery.flot.js')
+    script(type='text/javascript' src='/assets/plugins/flot-charts/jquery.flot.resize.js')
+    script(type='text/javascript' src='/assets/plugins/flot-charts/jquery.flot.pie.js')
+    script(type='text/javascript' src='/assets/plugins/flot-charts/jquery.flot.categories.js')
+    script(type='text/javascript' src='/assets/plugins/flot-charts/jquery.flot.time.js')
+    script(type='text/javascript' src='/assets/js/pages/charts/flot.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | FLOT CHART
+                small
+                    | Taken from&nbsp;
+                    a(href='http://www.flotcharts.org' target='_blank') www.flotcharts.org
+        // Real-Time Chart
+        .row.clearfix
+            .col-xs-12.col-sm-12.col-md-12.col-lg-12
+                .card
+                    .header
+                        h2 REAL-TIME CHART
+                        .pull-right
+                            .switch.panel-switch-btn
+                                span.m-r-10.font-12 REAL TIME
+                                label
+                                    | OFF
+                                    input#realtime(type='checkbox' checked='')
+                                    span.lever.switch-col-cyan
+                                    | ON
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #real_time_chart.flot-chart
+        // #END# Real-Time Chart
+        // Multiple Axis
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 MULTIPLE AXIS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #multiple_axis_chart.flot-chart
+        // #END# Multiple Axis
+        // Tracking
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 TRACKING
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #tracking_chart.flot-chart
+        // #END# Tracking
+        .row.clearfix
+            // Pie Chart
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 PIE CHART
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #pie_chart.flot-chart
+            // #END# Pie Chart
+            // Bar Chart
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 BAR CHART
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #bar_chart.flot-chart
+            // #END# Bar Chart

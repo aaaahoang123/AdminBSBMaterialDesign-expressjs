@@ -1,0 +1,102 @@
+extends ../../layouts/master
+
+block title
+    | Image Gallery
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/light-gallery/css/lightgallery.css')
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/light-gallery/js/lightgallery-all.js')
+    script(type='text/javascript' src='/assets/js/pages/medias/image-gallery.js')
+
+block content
+    .container-fluid
+        // Image Gallery
+        .block-header
+            h2
+                | IMAGE GALLERY
+                small
+                    | Taken from&nbsp;
+                    a(href='http://sachinchoolur.github.io/lightGallery/' target='_blank') sachinchoolur.github.io/lightGallery
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | GALLERY
+                            small
+                                | All pictures taken from&nbsp;
+                                a(href='https://unsplash.com/' target='_blank') unsplash.com
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #aniimated-thumbnials.list-unstyled.row.clearfix
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/1.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-1.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/2.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-2.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/3.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-3.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/4.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-4.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/5.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-5.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/6.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-6.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/7.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-7.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/8.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-8.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/9.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-9.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/10.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-10.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/11.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-11.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/12.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-12.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/13.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-13.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/14.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-14.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/15.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-15.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/16.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-16.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/17.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-17.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/18.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-18.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/19.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-19.jpg')
+                            .col-lg-3.col-md-4.col-sm-6.col-xs-12
+                                a(href='/assets/images/image-gallery/20.jpg' data-sub-html='Demo Description')
+                                    img.img-responsive.thumbnail(src='/assets/images/image-gallery/thumb/thumb-20.jpg')

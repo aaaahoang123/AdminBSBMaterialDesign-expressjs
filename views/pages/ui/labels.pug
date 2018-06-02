@@ -1,0 +1,104 @@
+extends ../../layouts/master
+
+block title
+    | Labels
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | LABELS
+        // Labels
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | LABELS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        span.label.label-default Default
+                        span.label.label-primary Primary
+                        span.label.label-success Success
+                        span.label.label-info Info
+                        span.label.label-warning Warning
+                        span.label.label-danger Danger
+                        hr
+                        h1
+                            | Example heading
+                            span.label.label-danger New
+                        h2
+                            | Example heading
+                            span.label.label-warning New
+                        h3
+                            | Example heading
+                            span.label.label-info New
+                        h4
+                            | Example heading
+                            span.label.label-success New
+                        h5
+                            | Example heading
+                            span.label.label-primary New
+                        h6
+                            | Example heading
+                            span.label.label-default New
+        // #END# Labels
+        // Labels With Material Design Colors
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | LABELS WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use material design color which examples are&nbsp;
+                                code .bg-pink, bg-red
+                                |  class
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        span.label.bg-red Red
+                        span.label.bg-pink Pink
+                        span.label.bg-purple Purple
+                        span.label.bg-deep-purple Deep Purple
+                        span.label.bg-indigo Indigo
+                        span.label.bg-blue Blue
+                        span.label.bg-light-blue Light Blue
+                        span.label.bg-cyan Cyan
+                        span.label.bg-teal Teal
+                        span.label.bg-green Green
+                        span.label.bg-light-green Light Green
+                        span.label.bg-lime Lime
+                        span.label.bg-yellow Yellow
+                        span.label.bg-amber Amber
+                        span.label.bg-orange Orange
+                        span.label.bg-deep-orange Deep Orange
+                        span.label.bg-brown Brown
+                        span.label.bg-grey Grey
+                        span.label.bg-blue-grey Blue Grey
+                        span.label.bg-black Black
+        // #END# Labels With Material Design Colors

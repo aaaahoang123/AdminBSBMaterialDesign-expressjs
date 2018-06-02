@@ -1,0 +1,179 @@
+extends ../../../layouts/master
+
+block title
+    | Info Box 1
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/jquery-countto/jquery.countTo.js')
+    script(type='text/javascript' src='/assets/plugins/jquery-sparkline/jquery.sparkline.js')
+    script(type='text/javascript' src='/assets/js/pages/widgets/infobox/infobox-1.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | COUNTER ANIMATION
+                small
+                    | Taken from&nbsp;
+                    a(href='https://github.com/mhuggins/jquery-countTo' target='_blank') github.com/mhuggins/jquery-countTo
+        // Counter Examples
+        .row.clearfix
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-red
+                        i.material-icons shopping_cart
+                    .content
+                        .text NEW ORDERS
+                        .number.count-to(data-from='0' data-to='125' data-speed='1000' data-fresh-interval='20') 125
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-indigo
+                        i.material-icons face
+                    .content
+                        .text NEW MEMBERS
+                        .number.count-to(data-from='0' data-to='257' data-speed='1000' data-fresh-interval='20') 257
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-purple
+                        i.material-icons bookmark
+                    .content
+                        .text BOOKMARKS
+                        .number.count-to(data-from='0' data-to='117' data-speed='1000' data-fresh-interval='20')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-deep-purple
+                        i.material-icons favorite
+                    .content
+                        .text LIKES
+                        .number.count-to(data-from='0' data-to='1432' data-speed='1500' data-fresh-interval='20')
+        // #END# Counter Examples
+        // Hover Zoom Effect
+        .block-header
+            h2 HOVER ZOOM EFFECT
+        .row.clearfix
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-zoom-effect
+                    .icon.bg-pink
+                        i.material-icons email
+                    .content
+                        .text MESSAGES
+                        .number 15
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-zoom-effect
+                    .icon.bg-blue
+                        i.material-icons devices
+                    .content
+                        .text CPU USAGE
+                        .number 92%
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-zoom-effect
+                    .icon.bg-light-blue
+                        i.material-icons access_alarm
+                    .content
+                        .text ALARM
+                        .number 07:00 AM
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-zoom-effect
+                    .icon.bg-cyan
+                        i.material-icons gps_fixed
+                    .content
+                        .text LOCATION
+                        .number Turkey
+        // #END# Hover Zoom Effect
+        // Hover Expand Effect
+        .block-header
+            h2 HOVER EXPAND EFFECT
+        .row.clearfix
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-expand-effect
+                    .icon.bg-teal
+                        i.material-icons equalizer
+                    .content
+                        .text BOUNCE RATE
+                        .number 62%
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-expand-effect
+                    .icon.bg-green
+                        i.material-icons flight_takeoff
+                    .content
+                        .text FLIGHT
+                        .number 02:59 PM
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-expand-effect
+                    .icon.bg-light-green
+                        i.material-icons battery_charging_full
+                    .content
+                        .text BATTERY
+                        .number Charging
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box.hover-expand-effect
+                    .icon.bg-lime
+                        i.material-icons brightness_low
+                    .content
+                        .text BRIGHTNESS RATE
+                        .number 40%
+        // #END# Hover Expand Effect
+        // Chart Samples
+        .block-header
+            h2 CHART SAMPLES
+        .row.clearfix
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-yellow
+                        .chart.chart-bar 6,4,8,6,8,10,5,6,7,9,5
+                    .content
+                        .text WEBSITE TRAFFICS
+                        .number 127 526
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-amber
+                        .chart.chart-bar 6,4,8,6,8,10,5,6,7,9,5
+                    .content
+                        .text WEBSITE IMPRESSIONS
+                        .number 457 512
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-orange
+                        .chart.chart-pie 30, 35, 25, 8
+                    .content
+                        .text USAGE
+                        .number 98%
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-deep-orange
+                        .chart.chart-pie 30, 35, 25, 10
+                    .content
+                        .text USAGE
+                        .number 100%
+        .row
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-brown
+                        span.chart.chart-line 9,4,6,5,6,4,7,3
+                    .content
+                        .text DAILY SALES
+                        .number $12 526
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-grey
+                        span.chart.chart-line 9,4,6,5,6,4,7,3
+                    .content
+                        .text TOTAL SALES
+                        .number $125 543
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-blue-grey
+                        .chart.chart-bar 4,6,-3,-1,2,-2,4,3,6,7,-2,3
+                    .content
+                        .text CURRENCY
+                        .number $1 063
+            .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                .info-box
+                    .icon.bg-black
+                        .chart.chart-bar 4,6,-3,-1,2,-2,4,3,6,7,-2,3
+                    .content
+                        .text CURRENCY
+                        .number $1 125
+        // #END# Chart Samples

@@ -1,0 +1,111 @@
+extends ../../layouts/master
+
+block title
+    | Thumbnails
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 THUMBNAILS
+        // Default Example
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DEFAULT EXAMPLE
+                            small
+                                | By default, Bootstrap&apos;s thumbnails are designed to showcase linked images with minimal required markup
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href='javascript:void(0);')
+                                    img.img-responsive(src='http://placehold.it/500x300')
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href='javascript:void(0);')
+                                    img.img-responsive(src='http://placehold.it/500x300')
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href='javascript:void(0);')
+                                    img.img-responsive(src='http://placehold.it/500x300')
+                            .col-xs-6.col-md-3
+                                a.thumbnail(href='javascript:void(0);')
+                                    img.img-responsive(src='http://placehold.it/500x300')
+        // #END# Default Example
+        // Custom Content
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CUSTOM CONTENT
+                            small
+                                | With a bit of extra markup, it&apos;s possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row
+                            .col-sm-6.col-md-3
+                                .thumbnail
+                                    img(src='http://placehold.it/500x300')
+                                    .caption
+                                        h3 Thumbnail label
+                                        p
+                                            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy
+                                            | text ever since the 1500s
+                                        p
+                                            a.btn.btn-primary.waves-effect(href='javascript:void(0);' role='button') BUTTON
+                            .col-sm-6.col-md-3
+                                .thumbnail
+                                    img(src='http://placehold.it/500x300')
+                                    .caption
+                                        h3 Thumbnail label
+                                        p
+                                            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy
+                                            | text ever since the 1500s
+                                        p
+                                            a.btn.btn-primary.waves-effect(href='javascript:void(0);' role='button') BUTTON
+                            .col-sm-6.col-md-3
+                                .thumbnail
+                                    img(src='http://placehold.it/500x300')
+                                    .caption
+                                        h3 Thumbnail label
+                                        p
+                                            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy
+                                            | text ever since the 1500s
+                                        p
+                                            a.btn.btn-primary.waves-effect(href='javascript:void(0);' role='button') BUTTON
+                            .col-sm-6.col-md-3
+                                .thumbnail
+                                    img(src='http://placehold.it/500x300')
+                                    .caption
+                                        h3 Thumbnail label
+                                        p
+                                            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy
+                                            | text ever since the 1500s
+                                        p
+                                            a.btn.btn-primary.waves-effect(href='javascript:void(0);' role='button') BUTTON
+        // #END# Custom Content

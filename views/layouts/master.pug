@@ -1,0 +1,42 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title
+        block title
+    link(rel='icon' href='/favicon.ico' type='image/x-icon')
+    // Core css
+    link(rel='stylesheet' href='/assets/plugins/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet' href='/assets/plugins/node-waves/waves.css')
+    link(rel='stylesheet' href='/assets/plugins/animate-css/animate.css')
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' type='text/css')
+    // /Core css
+    // Extra css
+    block extra-css
+    // Extra css
+    link(rel='stylesheet' href='/assets/css/style.css')
+    link(rel='stylesheet' href='/assets/css/themes/all-themes.css')
+include loader
+// overlay
+body.theme-red
+.overlay
+// overlay
+include header
+include sidebar
+
+section.content
+    block content
+// Script file
+script(type='text/javascript' src='/assets/plugins/jquery/jquery.min.js')
+script(type='text/javascript' src='/assets/plugins/bootstrap/js/bootstrap.js')
+script(type='text/javascript' src='/assets/plugins/bootstrap-select/js/bootstrap-select.js')
+script(type='text/javascript' src='/assets/plugins/jquery-slimscroll/jquery.slimscroll.js')
+script(type='text/javascript' src='/assets/plugins/node-waves/waves.js')
+script(type='text/javascript' src='/assets/js/admin.js')
+script(type='text/javascript' src='/assets/js/demo.js')
+// Extra script
+block extra-js
+// /Extra script

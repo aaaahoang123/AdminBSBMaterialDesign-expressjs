@@ -1,0 +1,154 @@
+extends ../../layouts/master
+
+block title
+    | Form Validation
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/sweetalert/sweetalert.css')
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/jquery-validation/jquery.validate.js')
+    script(type='text/javascript' src='/assets/plugins/jquery-steps/jquery.steps.js')
+    script(type='text/javascript' src='/assets/plugins/sweetalert/sweetalert.min.js')
+    script(type='text/javascript' src='/assets/js/pages/forms/form-validation.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | FORM VALIDATION
+                small
+                    | Taken from&nbsp;
+                    a(href='https://jqueryvalidation.org/' target='_blank') jqueryvalidation.org
+        // Basic Validation
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 BASIC VALIDATION
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form#form_validation(method='POST')
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='text' name='name' required='')
+                                    label.form-label Name
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='text' name='surname' required='')
+                                    label.form-label Surname
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='email' name='email' required='')
+                                    label.form-label Email
+                            .form-group
+                                input#male.with-gap(type='radio' name='gender')
+                                label(for='male') Male
+                                input#female.with-gap(type='radio' name='gender')
+                                label.m-l-20(for='female') Female
+                            .form-group.form-float
+                                .form-line
+                                    textarea.form-control.no-resize(name='description' cols='30' rows='5' required='')
+                                    label.form-label Description
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='password' name='password' required='')
+                                    label.form-label Password
+                            .form-group
+                                input#checkbox(type='checkbox' name='checkbox')
+                                label(for='checkbox') I have read and accept the terms
+                            button.btn.btn-primary.waves-effect(type='submit') SUBMIT
+        // #END# Basic Validation
+        // Advanced Validation
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 ADVANCED VALIDATION
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form#form_advanced_validation(method='POST')
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='text' name='minmaxlength' maxlength='10' minlength='3' required='')
+                                    label.form-label Min/Max Length
+                                .help-info Min. 3, Max. 10 characters
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='text' name='minmaxvalue' min='10' max='200' required='')
+                                    label.form-label Min/Max Value
+                                .help-info Min. Value: 10, Max. Value: 200
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='url' name='url' required='')
+                                    label.form-label Url
+                                .help-info Starts with http://, https://, ftp:// etc
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='text' name='date' required='')
+                                    label.form-label Date
+                                .help-info YYYY-MM-DD format
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='number' name='number' required='')
+                                    label.form-label Number
+                                .help-info Numbers only
+                            .form-group.form-float
+                                .form-line
+                                    input.form-control(type='text' name='creditcard' pattern='[0-9]{13,16}' required='')
+                                    label.form-label Credit Card
+                                .help-info Ex: 1234-5678-9012-3456
+                            button.btn.btn-primary.waves-effect(type='submit') SUBMIT
+        // #END# Advanced Validation
+        // Validation Stats
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | VALIDATION STATS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form#form_validation_stats
+                            .form-group.form-float
+                                .form-line.focused.warning
+                                    input.form-control(type='text' name='warning' value='Warning' required='')
+                                    label.form-label Form Validation - Warning
+                            .form-group.form-float
+                                .form-line.focused.error
+                                    input.form-control(type='text' name='error' value='Error' required='')
+                                    label.form-label Form Validation - Error
+                            .form-group.form-float
+                                .form-line.focused.success
+                                    input.form-control(type='email' name='success' value='Success' required='')
+                                    label.form-label Form Validation - Success
+        // #END# Validation Stats

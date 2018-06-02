@@ -1,0 +1,211 @@
+extends ../../layouts/master
+
+block title
+    | Jquery Knob
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/jquery-knob/jquery.knob.min.js')
+    script(type='text/javascript' src='/assets/js/pages/charts/jquery-knob.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | JQUERY KNOB
+                small
+                    | Taken from&nbsp;
+                    a(href='https://github.com/aterrien/jQuery-Knob' target='_blank') github.com/aterrien/jQuery-Knob
+        // Basic Example
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 BASIC EXAMPLES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-2
+                                input.knob(type='text' value='86' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#F44336')
+                            .col-md-2
+                                input.knob(type='text' value='92' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#E91E63')
+                            .col-md-2
+                                input.knob(type='text' value='93' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#00BCD4')
+                            .col-md-2
+                                input.knob(type='text' value='89' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#009688')
+                            .col-md-2
+                                input.knob(type='text' value='91' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#FF9800')
+                            .col-md-2
+                                input.knob(type='text' value='93' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#9C27B0')
+        // #END# Basic Example
+        // Rounded Corners
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 ROUNDED CORNERS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-2
+                                input.knob(type='text' data-linecap='round' value='42' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#F44336')
+                            .col-md-2
+                                input.knob(type='text' data-linecap='round' value='56' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#E91E63')
+                            .col-md-2
+                                input.knob(type='text' data-linecap='round' value='48' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#00BCD4')
+                            .col-md-2
+                                input.knob(type='text' data-linecap='round' value='65' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#009688')
+                            .col-md-2
+                                input.knob(type='text' data-linecap='round' value='72' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#FF9800')
+                            .col-md-2
+                                input.knob(type='text' data-linecap='round' value='18' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#9C27B0')
+        // #END# Rounded Corners
+        // Different Sizes
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 DIFFERENT SIZES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-2
+                                input.knob(type='text' value='86' data-width='90' data-height='90' data-thickness='0.1' data-fgcolor='#F44336')
+                            .col-md-2
+                                input.knob(type='text' value='92' data-width='120' data-height='120' data-thickness='0.32' data-fgcolor='#E91E63')
+                            .col-md-2
+                                input.knob(type='text' value='93' data-width='120' data-height='120' data-thickness='0.50' data-fgcolor='#00BCD4')
+                            .col-md-2
+                                input.knob(type='text' value='89' data-width='80' data-height='80' data-thickness='0.16' data-fgcolor='#009688')
+                            .col-md-2
+                                input.knob(type='text' value='91' data-width='75' data-height='75' data-thickness='0.2' data-fgcolor='#FF9800')
+                            .col-md-2
+                                input.knob(type='text' value='93' data-width='120' data-height='120' data-thickness='0.12' data-fgcolor='#9C27B0')
+        // #END# Different Sizes
+        // Different Angles & Offsets
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 DIFFERENT ANGLES &amp; OFFSETS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-2
+                                input.knob(type='text' value='35' data-width='125' data-height='125' data-thickness='0.25' data-anglearc='250' data-angleoffset='-125' data-fgcolor='#F44336')
+                            .col-md-2
+                                input.knob(type='text' value='45' data-width='125' data-height='125' data-thickness='0.25' data-anglearc='250' data-angleoffset='-305' data-fgcolor='#E91E63')
+                            .col-md-2
+                                input.knob(type='text' value='40' data-width='125' data-height='125' data-thickness='0.25' data-anglearc='250' data-angleoffset='-35' data-fgcolor='#00BCD4')
+                            .col-md-2
+                                input.knob(type='text' value='36' data-width='125' data-height='125' data-thickness='0.25' data-anglearc='250' data-angleoffset='145' data-fgcolor='#009688')
+                            .col-md-2
+                                input.knob(type='text' value='43' data-width='125' data-height='125' data-thickness='0.25' data-anglearc='270' data-angleoffset='-0' data-fgcolor='#FF9800')
+                            .col-md-2
+                                input.knob(type='text' value='52' data-width='125' data-height='125' data-thickness='0.25' data-anglearc='270' data-angleoffset='90' data-fgcolor='#9C27B0')
+        // #END# Different Angles & Offsets
+        // Readonly
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 READ-ONLY
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-2
+                                input.knob(type='text' value='42' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#F44336' readonly='')
+                            .col-md-2
+                                input.knob(type='text' value='56' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#E91E63' readonly='')
+                            .col-md-2
+                                input.knob(type='text' value='48' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#00BCD4' readonly='')
+                            .col-md-2
+                                input.knob(type='text' value='65' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#009688' readonly='')
+                            .col-md-2
+                                input.knob(type='text' value='72' data-width='140' data-height='140' data-thickness='0.20' data-fgcolor='#FF9800' data-skin='tron' readonly='')
+                            .col-md-2
+                                input.knob(type='text' value='18' data-width='125' data-height='125' data-thickness='0.25' data-fgcolor='#9C27B0' data-anglearc='250' data-angleoffset='-125' readonly='')
+        // #END# Readonly
+        // Tron Style
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 TRON STYLE
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-2
+                                input.knob(type='text' data-skin='tron' value='45' data-width='135' data-height='135' data-thickness='0.2' data-fgcolor='#F44336')
+                            .col-md-2
+                                input.knob(type='text' data-skin='tron' value='58' data-width='135' data-height='135' data-thickness='0.2' data-fgcolor='#E91E63')
+                            .col-md-2
+                                input.knob(type='text' data-skin='tron' value='45' data-width='135' data-height='135' data-thickness='0.2' data-fgcolor='#00BCD4')
+                            .col-md-2
+                                input.knob(type='text' data-skin='tron' value='42' data-width='135' data-height='135' data-thickness='0.2' data-fgcolor='#009688')
+                            .col-md-2
+                                input.knob(type='text' data-skin='tron' value='100' data-width='135' data-height='135' data-thickness='0.2' data-anglearc='270' data-angleoffset='90' data-fgcolor='#FF9800')
+                            .col-md-2
+                                input.knob(type='text' data-skin='tron' value='100' data-width='135' data-height='135' data-thickness='0.2' data-anglearc='250' data-angleoffset='-125' data-fgcolor='#9C27B0')
+        // #END# Tron Style

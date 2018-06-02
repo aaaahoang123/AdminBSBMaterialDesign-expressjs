@@ -1,0 +1,78 @@
+extends ../../layouts/master
+
+block title
+    | Editable Table
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/editable-table/mindmup-editabletable.js')
+    script(type='text/javascript' src='/assets/js/pages/tables/editable-table.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | EDITABLE TABLE
+                small
+                    | Taken from&nbsp;
+                    a(href='https://github.com/mindmup/editable-table' taget='_blank') github.com/mindmup/editable-table
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | EXAMPLE
+                            small You can edit any columns except header/footer
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        table#mainTable.table.table-striped
+                            thead
+                                tr
+                                    th Name
+                                    th Cost
+                                    th Profit
+                                    th Fun
+                            tbody
+                                tr
+                                    td Car
+                                    td 100
+                                    td 200
+                                    td 0
+                                tr
+                                    td Bike
+                                    td 330
+                                    td 240
+                                    td 1
+                                tr
+                                    td Plane
+                                    td 430
+                                    td 540
+                                    td 3
+                                tr
+                                    td Yacht
+                                    td 100
+                                    td 200
+                                    td 0
+                                tr
+                                    td Segway
+                                    td 330
+                                    td 240
+                                    td 1
+                            tfoot
+                                tr
+                                    th
+                                        strong TOTAL
+                                    th 1290
+                                    th 1420
+                                    th 5

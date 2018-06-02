@@ -1,0 +1,659 @@
+extends ../../layouts/master
+
+block title
+    | Basic Form Elements
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')
+    link(rel='stylesheet' href='/assets/plugins/waitme/waitMe.css')
+    link(rel='stylesheet' href='/assets/plugins/bootstrap-select/css/bootstrap-select.css')
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/autosize/autosize.js')
+    script(type='text/javascript' src='/assets/plugins/momentjs/moment.js')
+    script(type='text/javascript' src='/assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js')
+    script(type='text/javascript' src='/assets/js/pages/forms/basic-form-elements.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 BASIC FORM ELEMENTS
+        // Input
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | INPUT
+                            small Different sizes and widths
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        h2.card-inside-title Basic Examples
+                        .row.clearfix
+                            .col-sm-12
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Username')
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='password' placeholder='Password')
+                        h2.card-inside-title Different Widths
+                        .row.clearfix
+                            .col-sm-6
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-6')
+                            .col-sm-6
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-6')
+                        .row.clearfix
+                            .col-sm-4
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-4')
+                            .col-sm-4
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-4')
+                            .col-sm-4
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-4')
+                        .row.clearfix
+                            .col-sm-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-3')
+                            .col-sm-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-3')
+                            .col-sm-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-3')
+                            .col-sm-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-sm-3')
+                        h2.card-inside-title Different Sizes
+                        .row.clearfix
+                            .col-sm-12
+                                .form-group.form-group-lg
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Large Input')
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Default Input')
+                                .form-group.form-group-sm
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Small Input')
+                        h2.card-inside-title Floating Label Examples
+                        .row.clearfix
+                            .col-sm-12
+                                .form-group.form-float
+                                    .form-line
+                                        input.form-control(type='text')
+                                        label.form-label Username
+                            .col-sm-12
+                                .form-group.form-float
+                                    .form-line
+                                        input.form-control(type='password')
+                                        label.form-label Password
+                            .col-sm-12
+                                .form-group.form-float.form-group-lg
+                                    .form-line
+                                        input.form-control(type='text')
+                                        label.form-label Large Input
+                                .form-group.form-float
+                                    .form-line
+                                        input.form-control(type='text')
+                                        label.form-label Default Input
+                                .form-group.form-float.form-group-sm
+                                    .form-line
+                                        input.form-control(type='text')
+                                        label.form-label Small Input
+                        h2.card-inside-title Input Status
+                        .row.clearfix
+                            .col-sm-6
+                                .form-group
+                                    .form-line.focused
+                                        input.form-control(type='text' value='Focused' placeholder='Statu Focused')
+                            .col-sm-6
+                                .form-group
+                                    .form-line.disabled
+                                        input.form-control(type='text' placeholder='Disabled' disabled='')
+        // #END# Input
+        // Textarea
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 TEXTAREA
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        h2.card-inside-title Basic Example
+                        .row.clearfix
+                            .col-sm-12
+                                .form-group
+                                    .form-line
+                                        textarea.form-control.no-resize(rows='4' placeholder='Please type what you want...')
+                        h2.card-inside-title
+                            | Auto Growing Vertical Direction
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://github.com/jackmoore/autosize/tree/master' target='_blank') github.com/jackmoore/autosize/tree/master
+                        .form-group
+                            .form-line
+                                textarea.form-control.no-resize.auto-growth(rows='1' placeholder="Please type what you want... And please don't forget the ENTER key press multiple times :)")
+        // #END# Textarea
+        // Select
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | SELECT
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://silviomoreto.github.io/bootstrap-select/' target='_blank') silviomoreto.github.io/bootstrap-select
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-sm-6
+                                select.form-control.show-tick
+                                    option(value='') -- Please select --
+                                    option(value='10') 10
+                                    option(value='20') 20
+                                    option(value='30') 30
+                                    option(value='40') 40
+                                    option(value='50') 50
+                            .col-sm-6
+                                select.form-control(disabled='')
+                                    option(value='') Disabled
+                                    option(value='10') 10
+                                    option(value='20') 20
+                                    option(value='30') 30
+                                    option(value='40') 40
+                                    option(value='50') 50
+        // #END# Select
+        // Checkbox
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CHECKBOX
+                            small
+                                | Taken from&nbsp;
+                                a(href='http://materializecss.com/' target='_blank') materializecss.com
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        h2.card-inside-title Basic Examples
+                        .demo-checkbox
+                            input#basic_checkbox_1(type='checkbox' checked='')
+                            label(for='basic_checkbox_1') Default
+                            input#basic_checkbox_2.filled-in(type='checkbox' checked='')
+                            label(for='basic_checkbox_2') Filled In
+                            input#basic_checkbox_3(type='checkbox' checked='' disabled='')
+                            label(for='basic_checkbox_3') Default - Disabled
+                            input#basic_checkbox_4.filled-in(type='checkbox' checked='' disabled='')
+                            label(for='basic_checkbox_4') Filled In - Disabled
+                        h2.card-inside-title With Material Design Colors
+                        .demo-checkbox
+                            input#md_checkbox_1.chk-col-red(type='checkbox' checked='')
+                            label(for='md_checkbox_1') RED
+                            input#md_checkbox_2.chk-col-pink(type='checkbox' checked='')
+                            label(for='md_checkbox_2') PINK
+                            input#md_checkbox_3.chk-col-purple(type='checkbox' checked='')
+                            label(for='md_checkbox_3') PURPLE
+                            input#md_checkbox_4.chk-col-deep-purple(type='checkbox' checked='')
+                            label(for='md_checkbox_4') DEEP PURPLE
+                            input#md_checkbox_5.chk-col-indigo(type='checkbox' checked='')
+                            label(for='md_checkbox_5') INDIGO
+                            input#md_checkbox_6.chk-col-blue(type='checkbox' checked='')
+                            label(for='md_checkbox_6') BLUE
+                            input#md_checkbox_7.chk-col-light-blue(type='checkbox' checked='')
+                            label(for='md_checkbox_7') LIGHT BLUE
+                            input#md_checkbox_8.chk-col-cyan(type='checkbox' checked='')
+                            label(for='md_checkbox_8') CYAN
+                            input#md_checkbox_9.chk-col-teal(type='checkbox' checked='')
+                            label(for='md_checkbox_9') TEAL
+                            input#md_checkbox_10.chk-col-green(type='checkbox' checked='')
+                            label(for='md_checkbox_10') GREEN
+                            input#md_checkbox_11.chk-col-light-green(type='checkbox' checked='')
+                            label(for='md_checkbox_11') LIGHT GREEN
+                            input#md_checkbox_12.chk-col-lime(type='checkbox' checked='')
+                            label(for='md_checkbox_12') LIME
+                            input#md_checkbox_13.chk-col-yellow(type='checkbox' checked='')
+                            label(for='md_checkbox_13') YELLOW
+                            input#md_checkbox_14.chk-col-amber(type='checkbox' checked='')
+                            label(for='md_checkbox_14') AMBER
+                            input#md_checkbox_15.chk-col-orange(type='checkbox' checked='')
+                            label(for='md_checkbox_15') ORANGE
+                            input#md_checkbox_16.chk-col-deep-orange(type='checkbox' checked='')
+                            label(for='md_checkbox_16') DEEP ORANGE
+                            input#md_checkbox_17.chk-col-brown(type='checkbox' checked='')
+                            label(for='md_checkbox_17') BROWN
+                            input#md_checkbox_18.chk-col-grey(type='checkbox' checked='')
+                            label(for='md_checkbox_18') GREY
+                            input#md_checkbox_19.chk-col-blue-grey(type='checkbox' checked='')
+                            label(for='md_checkbox_19') BLUE GREY
+                            input#md_checkbox_20.chk-col-black(type='checkbox' checked='')
+                            label(for='md_checkbox_20') BLACK
+                        h2.card-inside-title With Material Design Colors - Filled In
+                        .demo-checkbox
+                            input#md_checkbox_21.filled-in.chk-col-red(type='checkbox' checked='')
+                            label(for='md_checkbox_21') RED
+                            input#md_checkbox_22.filled-in.chk-col-pink(type='checkbox' checked='')
+                            label(for='md_checkbox_22') PINK
+                            input#md_checkbox_23.filled-in.chk-col-purple(type='checkbox' checked='')
+                            label(for='md_checkbox_23') PURPLE
+                            input#md_checkbox_24.filled-in.chk-col-deep-purple(type='checkbox' checked='')
+                            label(for='md_checkbox_24') DEEP PURPLE
+                            input#md_checkbox_25.filled-in.chk-col-indigo(type='checkbox' checked='')
+                            label(for='md_checkbox_25') INDIGO
+                            input#md_checkbox_26.filled-in.chk-col-blue(type='checkbox' checked='')
+                            label(for='md_checkbox_26') BLUE
+                            input#md_checkbox_27.filled-in.chk-col-light-blue(type='checkbox' checked='')
+                            label(for='md_checkbox_27') LIGHT BLUE
+                            input#md_checkbox_28.filled-in.chk-col-cyan(type='checkbox' checked='')
+                            label(for='md_checkbox_28') CYAN
+                            input#md_checkbox_29.filled-in.chk-col-teal(type='checkbox' checked='')
+                            label(for='md_checkbox_29') TEAL
+                            input#md_checkbox_30.filled-in.chk-col-green(type='checkbox' checked='')
+                            label(for='md_checkbox_30') GREEN
+                            input#md_checkbox_31.filled-in.chk-col-light-green(type='checkbox' checked='')
+                            label(for='md_checkbox_31') LIGHT GREEN
+                            input#md_checkbox_32.filled-in.chk-col-lime(type='checkbox' checked='')
+                            label(for='md_checkbox_32') LIME
+                            input#md_checkbox_33.filled-in.chk-col-yellow(type='checkbox' checked='')
+                            label(for='md_checkbox_33') YELLOW
+                            input#md_checkbox_34.filled-in.chk-col-amber(type='checkbox' checked='')
+                            label(for='md_checkbox_34') AMBER
+                            input#md_checkbox_35.filled-in.chk-col-orange(type='checkbox' checked='')
+                            label(for='md_checkbox_35') ORANGE
+                            input#md_checkbox_36.filled-in.chk-col-deep-orange(type='checkbox' checked='')
+                            label(for='md_checkbox_36') DEEP ORANGE
+                            input#md_checkbox_37.filled-in.chk-col-brown(type='checkbox' checked='')
+                            label(for='md_checkbox_37') BROWN
+                            input#md_checkbox_38.filled-in.chk-col-grey(type='checkbox' checked='')
+                            label(for='md_checkbox_38') GREY
+                            input#md_checkbox_39.filled-in.chk-col-blue-grey(type='checkbox' checked='')
+                            label(for='md_checkbox_39') BLUE GREY
+                            input#md_checkbox_40.filled-in.chk-col-black(type='checkbox' checked='')
+                            label(for='md_checkbox_40') BLACK
+        // #END# Checkbox
+        // Radio
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | RADIO
+                            small
+                                | Taken from&nbsp;
+                                a(href='http://materializecss.com/' target='_blank') materializecss.com
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        h2.card-inside-title Basic Examples
+                        .demo-radio-button
+                            input#radio_1(name='group1' type='radio' checked='')
+                            label(for='radio_1') Radio - 1
+                            input#radio_2(name='group1' type='radio')
+                            label(for='radio_2') Radio - 2
+                            input#radio_3.with-gap(name='group1' type='radio')
+                            label(for='radio_3') Radio - With Gap
+                            input#radio_4.with-gap(name='group1' type='radio')
+                            label(for='radio_4') Radio - With Gap
+                            input#radio_5(name='group2' type='radio' checked='' disabled='')
+                            label(for='radio_5') Radio - Disabled
+                            input#radio_6.with-gap(name='group3' type='radio' checked='' disabled='')
+                            label(for='radio_6') Radio - Disabled
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are&nbsp;
+                                code .radio-col-pink, .radio-col-cyan
+                                |  class
+                        .demo-radio-button
+                            input#radio_7.radio-col-red(name='group4' type='radio' checked='')
+                            label(for='radio_7') RED
+                            input#radio_8.radio-col-pink(name='group4' type='radio')
+                            label(for='radio_8') PINK
+                            input#radio_9.radio-col-purple(name='group4' type='radio')
+                            label(for='radio_9') PURPLE
+                            input#radio_10.radio-col-deep-purple(name='group4' type='radio')
+                            label(for='radio_10') DEEP PURPLE
+                            input#radio_11.radio-col-indigo(name='group4' type='radio')
+                            label(for='radio_11') INDIGO
+                            input#radio_12.radio-col-blue(name='group4' type='radio')
+                            label(for='radio_12') BLUE
+                            input#radio_13.radio-col-light-blue(name='group4' type='radio')
+                            label(for='radio_13') LIGHT BLUE
+                            input#radio_14.radio-col-cyan(name='group4' type='radio')
+                            label(for='radio_14') CYAN
+                            input#radio_15.radio-col-teal(name='group4' type='radio')
+                            label(for='radio_15') TEAL
+                            input#radio_16.radio-col-green(name='group4' type='radio')
+                            label(for='radio_16') GREEN
+                            input#radio_17.radio-col-light-green(name='group4' type='radio')
+                            label(for='radio_17') LIGHT GREEN
+                            input#radio_18.radio-col-lime(name='group4' type='radio')
+                            label(for='radio_18') LIME
+                            input#radio_19.radio-col-yellow(name='group4' type='radio')
+                            label(for='radio_19') YELLOW
+                            input#radio_20.radio-col-amber(name='group4' type='radio')
+                            label(for='radio_20') AMBER
+                            input#radio_21.radio-col-orange(name='group4' type='radio')
+                            label(for='radio_21') ORANGE
+                            input#radio_22.radio-col-deep-orange(name='group4' type='radio')
+                            label(for='radio_22') DEEP ORANGE
+                            input#radio_23.radio-col-brown(name='group4' type='radio')
+                            label(for='radio_23') BROWN
+                            input#radio_24.radio-col-grey(name='group4' type='radio')
+                            label(for='radio_24') GREY
+                            input#radio_25.radio-col-blue-grey(name='group4' type='radio')
+                            label(for='radio_25') BLUE GREY
+                            input#radio_26.radio-col-black(name='group4' type='radio')
+                            label(for='radio_26') BLACK
+                        h2.card-inside-title
+                            | With Material Design Colors - With Gap
+                            small
+                                | Add to
+                                code .with-gap
+                                |  class
+                        .demo-radio-button
+                            input#radio_30.with-gap.radio-col-red(name='group5' type='radio' checked='')
+                            label(for='radio_30') RED
+                            input#radio_31.with-gap.radio-col-pink(name='group5' type='radio')
+                            label(for='radio_31') PINK
+                            input#radio_32.with-gap.radio-col-purple(name='group5' type='radio')
+                            label(for='radio_32') PURPLE
+                            input#radio_33.with-gap.radio-col-deep-purple(name='group5' type='radio')
+                            label(for='radio_33') DEEP PURPLE
+                            input#radio_34.with-gap.radio-col-indigo(name='group5' type='radio')
+                            label(for='radio_34') INDIGO
+                            input#radio_35.with-gap.radio-col-blue(name='group5' type='radio')
+                            label(for='radio_35') BLUE
+                            input#radio_36.with-gap.radio-col-light-blue(name='group5' type='radio')
+                            label(for='radio_36') LIGHT BLUE
+                            input#radio_37.with-gap.radio-col-cyan(name='group5' type='radio')
+                            label(for='radio_37') CYAN
+                            input#radio_38.with-gap.radio-col-teal(name='group5' type='radio')
+                            label(for='radio_38') TEAL
+                            input#radio_39.with-gap.radio-col-green(name='group5' type='radio')
+                            label(for='radio_39') GREEN
+                            input#radio_40.with-gap.radio-col-light-green(name='group5' type='radio')
+                            label(for='radio_40') LIGHT GREEN
+                            input#radio_41.with-gap.radio-col-lime(name='group5' type='radio')
+                            label(for='radio_41') LIME
+                            input#radio_42.with-gap.radio-col-yellow(name='group5' type='radio')
+                            label(for='radio_42') YELLOW
+                            input#radio_43.with-gap.radio-col-amber(name='group5' type='radio')
+                            label(for='radio_43') AMBER
+                            input#radio_44.with-gap.radio-col-orange(name='group5' type='radio')
+                            label(for='radio_44') ORANGE
+                            input#radio_45.with-gap.radio-col-deep-orange(name='group5' type='radio')
+                            label(for='radio_45') DEEP ORANGE
+                            input#radio_46.with-gap.radio-col-brown(name='group5' type='radio')
+                            label(for='radio_46') BROWN
+                            input#radio_47.with-gap.radio-col-grey(name='group5' type='radio')
+                            label(for='radio_47') GREY
+                            input#radio_48.with-gap.radio-col-blue-grey(name='group5' type='radio')
+                            label(for='radio_48') BLUE GREY
+                            input#radio_49.with-gap.radio-col-black(name='group5' type='radio')
+                            label(for='radio_49') BLACK
+        // #END# Radio
+        // Switch Button
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | SWITCH BUTTON
+                            small
+                                | Taken from&nbsp;
+                                a(href='http://materializecss.com/' target='_blank') materializecss.com
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        h2.card-inside-title Basic Examples
+                        .demo-switch
+                            .switch
+                                label
+                                    | OFF
+                                    input(type='checkbox' checked='')
+                                    span.lever
+                                    | ON
+                            .switch
+                                label
+                                    | DISABLED
+                                    input(type='checkbox' disabled='')
+                                    span.lever
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are
+                                code .switch-col-pink, .switch-col-teal
+                                |  class
+                        .demo-switch
+                            .row.clearfix
+                                .col-sm-3
+                                    .demo-switch-title RED
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-red
+                                .col-sm-3
+                                    .demo-switch-title PINK
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-pink
+                                .col-sm-3
+                                    .demo-switch-title PURPLE
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-purple
+                                .col-sm-3
+                                    .demo-switch-title DEEP PURPLE
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-deep-purple
+                                .col-sm-3
+                                    .demo-switch-title INDIGO
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-indigo
+                                .col-sm-3
+                                    .demo-switch-title BLUE
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-blue
+                                .col-sm-3
+                                    .demo-switch-title LIGHT BLUE
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-light-blue
+                                .col-sm-3
+                                    .demo-switch-title CYAN
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-cyan
+                                .col-sm-3
+                                    .demo-switch-title TEAL
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-teal
+                                .col-sm-3
+                                    .demo-switch-title GREEN
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-green
+                                .col-sm-3
+                                    .demo-switch-title LIGHT GREEN
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-light-green
+                                .col-sm-3
+                                    .demo-switch-title LIME
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-lime
+                                .col-sm-3
+                                    .demo-switch-title YELLOW
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-yellow
+                                .col-sm-3
+                                    .demo-switch-title AMBER
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-amber
+                                .col-sm-3
+                                    .demo-switch-title ORANGE
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-orange
+                                .col-sm-3
+                                    .demo-switch-title DEEP ORANGE
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-deep-orange
+                                .col-sm-3
+                                    .demo-switch-title BROWN
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-brown
+                                .col-sm-3
+                                    .demo-switch-title GREY
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-grey
+                                .col-sm-3
+                                    .demo-switch-title BLUE GREY
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-blue-grey
+                                .col-sm-3
+                                    .demo-switch-title BLACK
+                                    .switch
+                                        label
+                                            input(type='checkbox' checked='')
+                                            span.lever.switch-col-black
+        // #END# Switch Button
+        // DateTime Picker
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DATETIME PICKER
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://github.com/T00rk/bootstrap-material-datetimepicker' target='_blank') github.com/T00rk/bootstrap-material-datetimepicker
+                                |  with
+                                a(href='http://momentjs.com/' target='_blank') momentjs.com
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-sm-4
+                                .form-group
+                                    .form-line
+                                        input.datepicker.form-control(type='text' placeholder='Please choose a date...')
+                            .col-sm-4
+                                .form-group
+                                    .form-line
+                                        input.timepicker.form-control(type='text' placeholder='Please choose a time...')
+                            .col-sm-4
+                                .form-group
+                                    .form-line
+                                        input.datetimepicker.form-control(type='text' placeholder='Please choose date & time...')
+        // #END# DateTime Picker

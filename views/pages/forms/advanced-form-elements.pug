@@ -1,0 +1,618 @@
+extends ../../layouts/master
+
+block title
+    | Advanced Form Elements
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css')
+    link(rel='stylesheet' href='/assets/plugins/dropzone/dropzone.css')
+    link(rel='stylesheet' href='/assets/plugins/multi-select/css/multi-select.css')
+    link(rel='stylesheet' href='/assets/plugins/jquery-spinner/css/bootstrap-spinner.css')
+    link(rel='stylesheet' href='/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css')
+    link(rel='stylesheet' href='/assets/plugins/bootstrap-select/css/bootstrap-select.css')
+    link(rel='stylesheet' href='/assets/plugins/nouislider/nouislider.min.css')
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js')
+    script(type='text/javascript' src='/assets/plugins/dropzone/dropzone.js')
+    script(type='text/javascript' src='/assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js')
+    script(type='text/javascript' src='/assets/plugins/multi-select/js/jquery.multi-select.js')
+    script(type='text/javascript' src='/assets/plugins/jquery-spinner/js/jquery.spinner.js')
+    script(type='text/javascript' src='/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')
+    script(type='text/javascript' src='/assets/plugins/nouislider/nouislider.js')
+    script(type='text/javascript' src='/assets/js/pages/forms/advanced-form-elements.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 ADVANCED FORM ELEMENTS
+        // Color Pickers
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | COLOR PICKERS
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://github.com/mjolnic/bootstrap-colorpicker/' target='_blank') github.com/mjolnic/bootstrap-colorpicker
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-6
+                                b HEX CODE
+                                .input-group.colorpicker
+                                    .form-line
+                                        input.form-control(type='text' value='#00AABB')
+                                    span.input-group-addon
+                                        i
+                            .col-md-6
+                                b RGB(A) CODE
+                                .input-group.colorpicker
+                                    .form-line
+                                        input.form-control(type='text' value='rgba(0,0,0,0.7)')
+                                    span.input-group-addon
+                                        i
+        // #END# Color Pickers
+        // File Upload | Drag & Drop OR With Click & Choose
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | FILE UPLOAD - DRAG &amp; DROP OR WITH CLICK &amp; CHOOSE
+                            small
+                                | Taken from&nbsp;
+                                a(href='http://www.dropzonejs.com/' target='_blank') www.dropzonejs.com
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form#frmFileUpload.dropzone(action='/' method='post' enctype='multipart/form-data')
+                            .dz-message
+                                .drag-icon-cph
+                                    i.material-icons touch_app
+                                h3 Drop files here or click to upload.
+                                em
+                                    | (This is just a demo dropzone. Selected files are
+                                    strong not
+                                    |  actually uploaded.)
+                            .fallback
+                                input(name='file' type='file' multiple='')
+        // #END# File Upload | Drag & Drop OR With Click & Choose
+        // Masked Input
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MASKED INPUT
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://github.com/RobinHerbots/jquery.inputmask' target='_blank') github.com/RobinHerbots/jquery.inputmask
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-masked-input
+                            .row.clearfix
+                                .col-md-3
+                                    b Date
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons date_range
+                                        .form-line
+                                            input.form-control.date(type='text' placeholder='Ex: 30/07/2016')
+                                .col-md-3
+                                    b Time (24 hour)
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons access_time
+                                        .form-line
+                                            input.form-control.time24(type='text' placeholder='Ex: 23:59')
+                                .col-md-3
+                                    b Time (12 hour)
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons access_time
+                                        .form-line
+                                            input.form-control.time12(type='text' placeholder='Ex: 11:59 pm')
+                                .col-md-3
+                                    b Date Time
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons date_range
+                                        .form-line
+                                            input.form-control.datetime(type='text' placeholder='Ex: 30/07/2016 23:59')
+                                .col-md-3
+                                    b Mobile Phone Number
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons phone_iphone
+                                        .form-line
+                                            input.form-control.mobile-phone-number(type='text' placeholder='Ex: +00 (000) 000-00-00')
+                                .col-md-3
+                                    b Phone Number
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons phone
+                                        .form-line
+                                            input.form-control.mobile-phone-number(type='text' placeholder='Ex: +00 (000) 000-00-00')
+                                .col-md-3
+                                    b Money (Dollar)
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons attach_money
+                                        .form-line
+                                            input.form-control.money-dollar(type='text' placeholder='Ex: 99,99 $')
+                                .col-md-3
+                                    b Money (Euro)
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons euro_symbol
+                                        .form-line
+                                            input.form-control.money-euro(type='text' placeholder='Ex: 99,99 €')
+                                .col-md-3
+                                    b IP Address
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons computer
+                                        .form-line
+                                            input.form-control.ip(type='text' placeholder='Ex: 255.255.255.255')
+                                .col-md-3
+                                    b Credit Card
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons credit_card
+                                        .form-line
+                                            input.form-control.credit-card(type='text' placeholder='Ex: 0000 0000 0000 0000')
+                                .col-md-3
+                                    b Email Address
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons email
+                                        .form-line
+                                            input.form-control.email(type='text' placeholder='Ex: example@example.com')
+                                .col-md-3
+                                    b Serial Key
+                                    .input-group
+                                        span.input-group-addon
+                                            i.material-icons vpn_key
+                                        .form-line
+                                            input.form-control.key(type='text' placeholder='Ex: XXX0-XXXX-XX00-0XXX')
+        // #END# Masked Input
+        // Input Group
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | INPUT GROUP
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        h2.card-inside-title With Icon
+                        .row.clearfix
+                            .col-md-4
+                                .input-group
+                                    span.input-group-addon
+                                        i.material-icons person
+                                    .form-line
+                                        input.form-control.date(type='text' placeholder='Username')
+                            .col-md-4
+                                .input-group
+                                    .form-line
+                                        input.form-control.date(type='text' placeholder='Message')
+                                    span.input-group-addon
+                                        i.material-icons send
+                            .col-md-4
+                                .input-group
+                                    span.input-group-addon
+                                        i.material-icons person
+                                    .form-line
+                                        input.form-control.date(type='text' placeholder="Recipient's username")
+                                    span.input-group-addon
+                                        i.material-icons send
+                        h2.card-inside-title With Text
+                        .row.clearfix
+                            .col-md-4
+                                .input-group
+                                    span.input-group-addon @
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Username')
+                            .col-md-4
+                                .input-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder="Recipient's username")
+                                    span.input-group-addon @example.com
+                            .col-md-4
+                                .input-group
+                                    span.input-group-addon $
+                                    .form-line
+                                        input.form-control.date(type='text')
+                                    span.input-group-addon .00
+                        h2.card-inside-title
+                            | Different Sizes
+                            small
+                                | You can use the&nbsp;
+                                code .input-group-sm, .input-group-lg
+                                |  classes for sizing.
+                        .row.clearfix
+                            .col-md-4
+                                p
+                                    b Input Group Large
+                                .input-group.input-group-lg
+                                    span.input-group-addon
+                                        i.material-icons person
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Username')
+                            .col-md-4
+                                p
+                                    b Input Group Default
+                                .input-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Message')
+                                    span.input-group-addon
+                                        i.material-icons send
+                            .col-md-4
+                                p
+                                    b Input Group Small
+                                .input-group.input-group-sm
+                                    span.input-group-addon
+                                        i.material-icons person
+                                    .form-line
+                                        input.form-control(type='text' placeholder="Recipient's username")
+                                    span.input-group-addon
+                                        i.material-icons send
+                        .row.clearfix
+                            .col-md-4
+                                .input-group.input-group-lg
+                                    span.input-group-addon @
+                                    .form-line
+                                        input.form-control(type='text' placeholder='Username')
+                            .col-md-4
+                                .input-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder="Recipient's username")
+                                    span.input-group-addon @example.com
+                            .col-md-4
+                                .input-group.input-group-sm
+                                    span.input-group-addon $
+                                    .form-line
+                                        input.form-control(type='text')
+                                    span.input-group-addon .00
+                        h2.card-inside-title Radio &amp; Checkbox
+                        .row.clearfix
+                            .col-md-6
+                                .input-group.input-group-lg
+                                    span.input-group-addon
+                                        input#ig_checkbox.filled-in(type='checkbox')
+                                        label(for='ig_checkbox')
+                                    .form-line
+                                        input.form-control(type='text')
+                            .col-md-6
+                                .input-group.input-group-lg
+                                    span.input-group-addon
+                                        input#ig_radio.with-gap(type='radio')
+                                        label(for='ig_radio')
+                                    .form-line
+                                        input.form-control(type='text')
+        // #END# Input Group
+        // Multi Select
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MULTI-SELECT
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://github.com/lou/multi-select/' target='_blank') github.com/lou/multi-select
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        select#optgroup.ms(multiple='multiple')
+                            optgroup(label='Alaskan/Hawaiian Time Zone')
+                                option(value='AK') Alaska
+                                option(value='HI') Hawaii
+                            optgroup(label='Pacific Time Zone')
+                                option(value='CA') California
+                                option(value='NV') Nevada
+                                option(value='OR') Oregon
+                                option(value='WA') Washington
+                            optgroup(label='Mountain Time Zone')
+                                option(value='AZ') Arizona
+                                option(value='CO') Colorado
+                                option(value='ID') Idaho
+                                option(value='MT') Montana
+                                option(value='NE') Nebraska
+                                option(value='NM') New Mexico
+                                option(value='ND') North Dakota
+                                option(value='UT') Utah
+                                option(value='WY') Wyoming
+                            optgroup(label='Central Time Zone')
+                                option(value='AL') Alabama
+                                option(value='AR') Arkansas
+                                option(value='IL') Illinois
+                                option(value='IA') Iowa
+                                option(value='KS') Kansas
+                                option(value='KY') Kentucky
+                                option(value='LA') Louisiana
+                                option(value='MN') Minnesota
+                                option(value='MS') Mississippi
+                                option(value='MO') Missouri
+                                option(value='OK') Oklahoma
+                                option(value='SD') South Dakota
+                                option(value='TX') Texas
+                                option(value='TN') Tennessee
+                                option(value='WI') Wisconsin
+                            optgroup(label='Eastern Time Zone')
+                                option(value='CT') Connecticut
+                                option(value='DE') Delaware
+                                option(value='FL') Florida
+                                option(value='GA') Georgia
+                                option(value='IN') Indiana
+                                option(value='ME') Maine
+                                option(value='MD') Maryland
+                                option(value='MA') Massachusetts
+                                option(value='MI') Michigan
+                                option(value='NH') New Hampshire
+                                option(value='NJ') New Jersey
+                                option(value='NY') New York
+                                option(value='NC') North Carolina
+                                option(value='OH') Ohio
+                                option(value='PA') Pennsylvania
+                                option(value='RI') Rhode Island
+                                option(value='SC') South Carolina
+                                option(value='VT') Vermont
+                                option(value='VA') Virginia
+                                option(value='WV') West Virginia
+        // #END# Multi Select
+        .row.clearfix
+            // Spinners
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | SPINNERS
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://github.com/vsn4ik/jquery.spinner' target='_blank') github.com/vsn4ik/jquery.spinner
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-6
+                                .input-group.spinner(data-trigger='spinner')
+                                    .form-line
+                                        input.form-control.text-center(type='text' value='1' data-rule='quantity')
+                                    span.input-group-addon
+                                        a.spin-up(href='javascript:;' data-spin='up')
+                                            i.glyphicon.glyphicon-chevron-up
+                                        a.spin-down(href='javascript:;' data-spin='down')
+                                            i.glyphicon.glyphicon-chevron-down
+                            .col-md-6
+                                .input-group.spinner(data-trigger='spinner')
+                                    .form-line
+                                        input.form-control.text-center(type='text' value='1' data-rule='currency')
+                                    span.input-group-addon
+                                        a.spin-up(href='javascript:;' data-spin='up')
+                                            i.glyphicon.glyphicon-chevron-up
+                                        a.spin-down(href='javascript:;' data-spin='down')
+                                            i.glyphicon.glyphicon-chevron-down
+            // #END# Spinners
+            // Tags Input
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | TAGS INPUT
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://github.com/bootstrap-tagsinput/bootstrap-tagsinput' target='_blank') github.com/bootstrap-tagsinput/bootstrap-tagsinput
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .form-group.demo-tagsinput-area
+                            .form-line
+                                input.form-control(type='text' data-role='tagsinput' value='Amsterdam,Washington,Sydney,Beijing,Cairo')
+            // #END# Tags Input
+        // Advanced Select
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | ADVANCED SELECT
+                            small
+                                | Taken from&nbsp;
+                                a(href='https://silviomoreto.github.io/bootstrap-select/' target='_blank') silviomoreto.github.io/bootstrap-select
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-3
+                                p
+                                    b Basic
+                                select.form-control.show-tick
+                                    option Mustard
+                                    option Ketchup
+                                    option Relish
+                            .col-md-3
+                                p
+                                    b With OptGroups
+                                select.form-control.show-tick
+                                    optgroup(label='Picnic')
+                                        option Mustard
+                                        option Ketchup
+                                        option Relish
+                                    optgroup(label='Camping')
+                                        option Tent
+                                        option Flashlight
+                                        option Toilet Paper
+                            .col-md-3
+                                p
+                                    b Multiple Select
+                                select.form-control.show-tick(multiple='')
+                                    option Mustard
+                                    option Ketchup
+                                    option Relish
+                            .col-md-3
+                                p
+                                    b With Search Bar
+                                select.form-control.show-tick(data-live-search='true')
+                                    option Hot Dog, Fries and a Soda
+                                    option Burger, Shake and a Smile
+                                    option Sugar, Spice and all things nice
+                        .row.clearfix
+                            .col-md-3
+                                p
+                                    b Max Selection Limit: 2
+                                select.form-control.show-tick(multiple='')
+                                    optgroup(label='Condiments' data-max-options='2')
+                                        option Mustard
+                                        option Ketchup
+                                        option Relish
+                                    optgroup(label='Breads' data-max-options='2')
+                                        option Plain
+                                        option Steamed
+                                        option Toasted
+                            .col-md-3
+                                p
+                                    b Display Count
+                                select.form-control.show-tick(multiple='' data-selected-text-format='count')
+                                    option Mustard
+                                    option Ketchup
+                                    option Relish
+                                    option Onions
+                            .col-md-3
+                                p
+                                    b With SubText
+                                select.form-control.show-tick(data-show-subtext='true')
+                                    option(data-subtext="French's") Mustard
+                                    option(data-subtext='Heinz') Ketchup
+                                    option(data-subtext='Sweet') Relish
+                                    option(data-subtext='Miracle Whip') Mayonnaise
+                                    option(data-divider='true')
+                                    option(data-subtext='Honey') Barbecue Sauce
+                                    option(data-subtext='Ranch') Salad Dressing
+                                    option(data-subtext='Sweet & Spicy') Tabasco
+                                    option(data-subtext='Chunky') Salsa
+                            .col-md-3
+                                p
+                                    b Disabled Option
+                                select.form-control.show-tick
+                                    option Mustard
+                                    option(disabled='') Ketchup
+                                    option Relish
+        // #END# Advanced Select
+        // Input Slider
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | INPUT SLIDER
+                            small
+                                | Taken from&nbsp;
+                                a(href='http://refreshless.com/nouislider' target='_blank') refreshless.com/nouislider
+                                |  &amp;
+                                a(href='http://materializecss.com' target='_blank') materializecss.com
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-6
+                                p
+                                    b Basic Example
+                                #nouislider_basic_example
+                                .m-t-20.font-12
+                                    b Value:
+                                    span.js-nouislider-value
+                            .col-md-6
+                                p
+                                    b Range Example
+                                #nouislider_range_example
+                                .m-t-20.font-12
+                                    b Value:
+                                    span.js-nouislider-value
+        // #END# Input Slider

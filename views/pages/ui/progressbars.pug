@@ -1,0 +1,211 @@
+extends ../../layouts/master
+
+block title
+    | Progress Bars
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 PROGRESS BARS
+        // Basic Examples
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BASIC EXAMPLES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .progress
+                            .progress-bar(role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 60%;')
+                                span.sr-only 60% Complete
+                        .progress
+                            .progress-bar(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%;')
+                                | 75%
+        // #END# Basic Examples
+        // Contextual Alternatives
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CONTEXTUAL ALTERNATIVES
+                            small
+                                | Progress bars use some of the same button and alert classes for consistent styles.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .progress
+                            .progress-bar.progress-bar-success(role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width: 40%')
+                                span.sr-only 40% Complete (success)
+                        .progress
+                            .progress-bar.progress-bar-info(role='progressbar' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100' style='width: 20%')
+                                span.sr-only 20% Complete
+                        .progress
+                            .progress-bar.progress-bar-warning(role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 60%')
+                                span.sr-only 60% Complete (warning)
+                        .progress
+                            .progress-bar.progress-bar-danger(role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%')
+                                span.sr-only 80% Complete (danger)
+        // #END# Contextual Alternatives
+        // Striped
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | STRIPED
+                            small Uses a gradient to create a striped effect. Not available in IE9 and below.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .progress
+                            .progress-bar.progress-bar-success.progress-bar-striped(role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width: 40%')
+                                span.sr-only 40% Complete (success)
+                        .progress
+                            .progress-bar.progress-bar-info.progress-bar-striped(role='progressbar' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100' style='width: 20%')
+                                span.sr-only 20% Complete
+                        .progress
+                            .progress-bar.progress-bar-warning.progress-bar-striped(role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 60%')
+                                span.sr-only 60% Complete (warning)
+                        .progress
+                            .progress-bar.progress-bar-danger.progress-bar-striped(role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%')
+                                span.sr-only 80% Complete (danger)
+        // #END# Striped
+        // Animated
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | ANIMATED
+                            small
+                                | Add&nbsp;
+                                code .active
+                                |  to&nbsp;
+                                code .progress-bar-striped
+                                |  to animate the stripes right to left. Not available in IE9 and below.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .progress
+                            .progress-bar.progress-bar-success.progress-bar-striped.active(role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width: 40%')
+                                span.sr-only 40% Complete (success)
+                        .progress
+                            .progress-bar.progress-bar-info.progress-bar-striped.active(role='progressbar' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100' style='width: 20%')
+                                span.sr-only 20% Complete
+                        .progress
+                            .progress-bar.progress-bar-warning.progress-bar-striped.active(role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 60%')
+                                span.sr-only 60% Complete (warning)
+                        .progress
+                            .progress-bar.progress-bar-danger.progress-bar-striped.active(role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%')
+                                span.sr-only 80% Complete (danger)
+        // #END# Animated
+        // Stacked
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | STACKED
+                            small
+                                | Place multiple bars into the same&nbsp;
+                                code .progress
+                                |  to stack them.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .progress
+                            .progress-bar.progress-bar-success(style='width: 35%')
+                                span.sr-only 35% Complete (success)
+                            .progress-bar.progress-bar-warning.progress-bar-striped.active(style='width: 20%')
+                                span.sr-only 20% Complete (warning)
+                            .progress-bar.progress-bar-danger(style='width: 10%')
+                                span.sr-only 10% Complete (danger)
+        // #END# Stacked
+        // With Material Design Colors
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use material design color which examples are&nbsp;
+                                code .bg-pink, .bg-red
+                                |  class
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .progress
+                            .progress-bar.bg-pink.progress-bar-striped(role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width: 40%')
+                                | PINK PROGRESS BAR
+                        .progress
+                            .progress-bar.bg-cyan.progress-bar-striped.active(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%')
+                                | CYAN PROGRESS BAR
+                        .progress
+                            .progress-bar.bg-teal.progress-bar-striped(role='progressbar' aria-valuenow='32' aria-valuemin='0' aria-valuemax='100' style='width: 32%')
+                                | TEAL PROGRESS BAR
+                        .progress
+                            .progress-bar.bg-orange.progress-bar-striped.active(role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100' style='width: 85%')
+                                | ORANGE PROGRESS BAR
+        // #END# With Material Design Colors

@@ -1,0 +1,408 @@
+extends ../../layouts/master
+
+block title
+    | Normal Tables
+
+block extra-css
+
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 NORMAL TABLES
+        // Basic Table
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BASIC TABLES
+                            small Basic example without any additional modification classes
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body.table-responsive
+                        table.table
+                            thead
+                                tr
+                                    th #
+                                    th FIRST NAME
+                                    th LAST NAME
+                                    th USERNAME
+                            tbody
+                                tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                                tr
+                                    th(scope='row') 4
+                                    td Larry
+                                    td Jellybean
+                                    td @lajelly
+                                tr
+                                    th(scope='row') 5
+                                    td Larry
+                                    td Kikat
+                                    td @lakitkat
+        // #END# Basic Table
+        // Striped Rows
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | STRIPED ROWS
+                            small
+                                | Use&nbsp;
+                                code .table-striped&nbsp;
+                                |  to add zebra-striping to any table row within the&nbsp;
+                                code &lt;tbody&gt;&nbsp;
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body.table-responsive
+                        table.table.table-striped
+                            thead
+                                tr
+                                    th #
+                                    th FIRST NAME
+                                    th LAST NAME
+                                    th USERNAME
+                            tbody
+                                tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                                tr
+                                    th(scope='row') 4
+                                    td Larry
+                                    td Jellybean
+                                    td @lajelly
+                                tr
+                                    th(scope='row') 5
+                                    td Larry
+                                    td Kikat
+                                    td @lakitkat
+        // #END# Striped Rows
+        // Bordered Table
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BORDERED TABLE
+                            small
+                                | Add
+                                code .table-bordered
+                                |  for borders on all sides of the table and cells.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body.table-responsive
+                        table.table.table-bordered
+                            thead
+                                tr
+                                    th #
+                                    th FIRST NAME
+                                    th LAST NAME
+                                    th USERNAME
+                            tbody
+                                tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                                tr
+                                    th(scope='row') 4
+                                    td Larry
+                                    td Jellybean
+                                    td @lajelly
+                                tr
+                                    th(scope='row') 5
+                                    td Larry
+                                    td Kikat
+                                    td @lakitkat
+        // #END# Bordered Table
+        // Hover Rows
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | HOVER ROWS
+                            small
+                                | Add
+                                code .table-hover
+                                |  to enable a hover state on table rows within a
+                                code &lt;tbody&gt;
+                                | .
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body.table-responsive
+                        table.table.table-hover
+                            thead
+                                tr
+                                    th #
+                                    th FIRST NAME
+                                    th LAST NAME
+                                    th USERNAME
+                            tbody
+                                tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                                tr
+                                    th(scope='row') 4
+                                    td Larry
+                                    td Jellybean
+                                    td @lajelly
+                                tr
+                                    th(scope='row') 5
+                                    td Larry
+                                    td Kikat
+                                    td @lakitkat
+        // #END# Hover Rows
+        // Condensed Table
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CONDENSED TABLE
+                            small
+                                | Add
+                                code .table-condensed
+                                |  to make tables more compact by cutting cell padding in half.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body.table-responsive
+                        table.table.table-condensed
+                            thead
+                                tr
+                                    th #
+                                    th FIRST NAME
+                                    th LAST NAME
+                                    th USERNAME
+                            tbody
+                                tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                                tr
+                                    th(scope='row') 4
+                                    td Larry
+                                    td Jellybean
+                                    td @lajelly
+                                tr
+                                    th(scope='row') 5
+                                    td Larry
+                                    td Kikat
+                                    td @lakitkat
+        // #END# Condensed Table
+        // Contextual Classes
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | CONTEXTUAL CLASSES
+                            small Use contextual classes to color table rows or individual cells.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body.table-responsive
+                        table.table.table-condensed
+                            thead
+                                tr
+                                    th #
+                                    th FIRST NAME
+                                    th LAST NAME
+                                    th USERNAME
+                            tbody
+                                tr.active
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr.success
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr.info
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                                tr.warning
+                                    th(scope='row') 4
+                                    td Larry
+                                    td Jellybean
+                                    td @lajelly
+                                tr.danger
+                                    th(scope='row') 5
+                                    td Larry
+                                    td Kikat
+                                    td @lakitkat
+        // #END# Contextual Classes
+        // With Material Design Colors
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | WITH MATERIAL DESIGN COLORS
+                            small
+                                | You can use material design colors which examples are
+                                code .bg-pink
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body.table-responsive
+                        table.table.table-condensed
+                            thead
+                                tr
+                                    th #
+                                    th FIRST NAME
+                                    th LAST NAME
+                                    th USERNAME
+                            tbody
+                                tr.bg-pink
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr.bg-cyan
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr.bg-teal
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                                tr.bg-orange
+                                    th(scope='row') 4
+                                    td Larry
+                                    td Jellybean
+                                    td @lajelly
+                                tr.bg-purple
+                                    th(scope='row') 5
+                                    td Larry
+                                    td Kikat
+                                    td @lakitkat
+        // #END# With Material Design Colors

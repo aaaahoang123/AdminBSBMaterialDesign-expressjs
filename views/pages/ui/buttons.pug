@@ -1,0 +1,1687 @@
+extends ../../layouts/master
+
+block title
+    | Buttons
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 BUTTONS
+        // Bootstrap Default Buttons
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BOOTSTRAP DEFAULT BUTTONS
+                            small Use any of the available button classes to quickly create a styled button
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .button-demo
+                            button.btn.btn-default.waves-effect(type='button') DEFAULT
+                            button.btn.btn-primary.waves-effect(type='button') PRIMARY
+                            button.btn.btn-success.waves-effect(type='button') SUCCESS
+                            button.btn.btn-info.waves-effect(type='button') INFO
+                            button.btn.btn-warning.waves-effect(type='button') WARNING
+                            button.btn.btn-danger.waves-effect(type='button') DANGER
+        // #END# Bootstrap Default Buttons
+        // Metarial Design Buttons
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | METARIAL DESIGN BUTTONS
+                            small Use any of the available button classes to quickly create a styled button
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .button-demo
+                            button.btn.bg-red.waves-effect(type='button') RED
+                            button.btn.bg-pink.waves-effect(type='button') PINK
+                            button.btn.bg-purple.waves-effect(type='button') PURPLE
+                            button.btn.bg-deep-purple.waves-effect(type='button') DEEP PURPLE
+                            button.btn.bg-indigo.waves-effect(type='button') INDIGO
+                            button.btn.bg-blue.waves-effect(type='button') BLUE
+                            button.btn.bg-light-blue.waves-effect(type='button') LIGHT BLUE
+                            button.btn.bg-cyan.waves-effect(type='button') CYAN
+                            button.btn.bg-teal.waves-effect(type='button') TEAL
+                            button.btn.bg-green.waves-effect(type='button') GREEN
+                            button.btn.bg-light-green.waves-effect(type='button') LIGHT GREEN
+                            button.btn.bg-lime.waves-effect(type='button') LIME
+                            button.btn.bg-yellow.waves-effect(type='button') YELLOW
+                            button.btn.bg-amber.waves-effect(type='button') AMBER
+                            button.btn.bg-orange.waves-effect(type='button') ORANGE
+                            button.btn.bg-deep-orange.waves-effect(type='button') DEEP ORANGE
+                            button.btn.bg-brown.waves-effect(type='button') BROWN
+                            button.btn.bg-grey.waves-effect(type='button') GREY
+                            button.btn.bg-blue-grey.waves-effect(type='button') BLUE GREY
+                            button.btn.bg-black.waves-effect.waves-light(type='button') BLACK
+        // #END# Metarial Design Buttons
+        // Button Sizes
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BUTTON SIZES
+                            small You can resize the buttons
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix.demo-button-sizes
+                            .col-xs-6.col-sm-3.col-md-2.col-lg-2
+                                button.btn.bg-red.btn-block.btn-lg.waves-effect(type='button') LARGE
+                                button.btn.bg-red.btn-block.waves-effect(type='button') DEFAULT
+                                button.btn.bg-red.btn-block.btn-sm.waves-effect(type='button') SMALL
+                                button.btn.bg-red.btn-block.btn-xs.waves-effect(type='button') EXTRA SMALL
+                            .col-xs-6.col-sm-3.col-md-2.col-lg-2
+                                button.btn.bg-pink.btn-block.btn-lg.waves-effect(type='button') LARGE
+                                button.btn.bg-pink.btn-block.waves-effect(type='button') DEFAULT
+                                button.btn.bg-pink.btn-block.btn-sm.waves-effect(type='button') SMALL
+                                button.btn.bg-pink.btn-block.btn-xs.waves-effect(type='button') EXTRA SMALL
+                            .col-xs-6.col-sm-3.col-md-2.col-lg-2
+                                button.btn.bg-cyan.btn-block.btn-lg.waves-effect(type='button') LARGE
+                                button.btn.bg-cyan.btn-block.waves-effect(type='button') DEFAULT
+                                button.btn.bg-cyan.btn-block.btn-sm.waves-effect(type='button') SMALL
+                                button.btn.bg-cyan.btn-block.btn-xs.waves-effect(type='button') EXTRA SMALL
+                            .col-xs-6.col-sm-3.col-md-2.col-lg-2
+                                button.btn.bg-teal.btn-block.btn-lg.waves-effect(type='button') LARGE
+                                button.btn.bg-teal.btn-block.waves-effect(type='button') DEFAULT
+                                button.btn.bg-teal.btn-block.btn-sm.waves-effect(type='button') SMALL
+                                button.btn.bg-teal.btn-block.btn-xs.waves-effect(type='button') EXTRA SMALL
+                            .col-xs-6.col-sm-3.col-md-2.col-lg-2
+                                button.btn.bg-orange.btn-block.btn-lg.waves-effect(type='button') LARGE
+                                button.btn.bg-orange.btn-block.waves-effect(type='button') DEFAULT
+                                button.btn.bg-orange.btn-block.btn-sm.waves-effect(type='button') SMALL
+                                button.btn.bg-orange.btn-block.btn-xs.waves-effect(type='button') EXTRA SMALL
+                            .col-xs-6.col-sm-3.col-md-2.col-lg-2
+                                button.btn.bg-purple.btn-block.btn-lg.waves-effect(type='button') LARGE
+                                button.btn.bg-purple.btn-block.waves-effect(type='button') DEFAULT
+                                button.btn.bg-purple.btn-block.btn-sm.waves-effect(type='button') SMALL
+                                button.btn.bg-purple.btn-block.btn-xs.waves-effect(type='button') EXTRA SMALL
+        // #END# Button Sizes
+        // Block Buttons
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BLOCK BUTTONS
+                            small Create block level buttons
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-button
+                            button.btn.btn-block.btn-lg.btn-default.waves-effect(type='button') DEFAULT
+                            button.btn.btn-block.btn-lg.btn-primary.waves-effect(type='button') PRIMARY
+                            button.btn.btn-block.btn-lg.btn-success.waves-effect(type='button') SUCCESS
+                            button.btn.btn-block.btn-lg.btn-info.waves-effect(type='button') INFO
+                            button.btn.btn-block.btn-lg.btn-warning.waves-effect(type='button') WARNING
+                            button.btn.btn-block.btn-lg.btn-danger.waves-effect(type='button') DANGER
+                            button.btn.btn-block.btn-lg.bg-red.waves-effect(type='button') RED
+                            button.btn.btn-block.btn-lg.bg-pink.waves-effect(type='button') PINK
+        // #END# Block Buttons
+        // Disabled Buttons
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DISABLED BUTTONS
+                            small Make buttons look unclickable by fading them back with opacity
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .button-demo
+                            button.btn.btn-default.waves-effect(type='button' disabled='disabled') DEFAULT
+                            button.btn.btn-primary.waves-effect(type='button' disabled='disabled') PRIMARY
+                            button.btn.btn-success.waves-effect(type='button' disabled='disabled') SUCCESS
+                            button.btn.btn-info.waves-effect(type='button' disabled='disabled') INFO
+                            button.btn.btn-warning.waves-effect(type='button' disabled='disabled') WARNING
+                            button.btn.btn-danger.waves-effect(type='button' disabled='disabled') DANGER
+                            button.btn.bg-red.waves-effect(type='button' disabled='disabled') RED
+                            button.btn.bg-pink.waves-effect(type='button' disabled='disabled') PINK
+                            button.btn.bg-purple.waves-effect(type='button' disabled='disabled') PURPLE
+                            button.btn.bg-deep-purple.waves-effect(type='button' disabled='disabled') DEEP PURPLE
+                            button.btn.bg-indigo.waves-effect(type='button' disabled='disabled') INDIGO
+                            button.btn.bg-blue.waves-effect(type='button' disabled='disabled') BLUE
+                            button.btn.bg-light-blue.waves-effect(type='button' disabled='disabled') LIGHT BLUE
+                            button.btn.bg-cyan.waves-effect(type='button' disabled='disabled') CYAN
+                            button.btn.bg-teal.waves-effect(type='button' disabled='disabled') TEAL
+                            button.btn.bg-green.waves-effect(type='button' disabled='disabled') GREEN
+                            button.btn.bg-light-green.waves-effect(type='button' disabled='disabled') LIGHT GREEN
+                            button.btn.bg-lime.waves-effect(type='button' disabled='disabled') LIME
+                            button.btn.bg-yellow.waves-effect(type='button' disabled='disabled') YELLOW
+                            button.btn.bg-amber.waves-effect(type='button' disabled='disabled') AMBER
+                            button.btn.bg-orange.waves-effect(type='button' disabled='disabled') ORANGE
+                            button.btn.bg-deep-orange.waves-effect(type='button' disabled='disabled') DEEP ORANGE
+                            button.btn.bg-brown.waves-effect(type='button' disabled='disabled') BROWN
+                            button.btn.bg-grey.waves-effect(type='button' disabled='disabled') GREY
+                            button.btn.bg-blue-grey.waves-effect(type='button' disabled='disabled') BLUE GREY
+                            button.btn.bg-black.waves-effect.waves-light(type='button' disabled='disabled') BLACK
+        // #END# Disabled Buttons
+        // Icon Buttons
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | ICON BUTTONS
+                            small Make icon buttons
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .icon-button-demo
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons extension
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons home
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons lock
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons perm_scan_wifi
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons flight_takeoff
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons print
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons report_problem
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons search
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons settings
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons trending_up
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons verified_user
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons mic
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons call_missed_outgoing
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons forum
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons email
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons chat
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons vpn_key
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons content_cut
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons drafts
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons save
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons weekend
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons access_alarm
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons location_searching
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons merge_type
+                            button.btn.btn-default.waves-effect(type='button')
+                                i.material-icons publish
+                        .icon-button-demo
+                            button.btn.btn-primary.waves-effect(type='button')
+                                i.material-icons extension
+                            button.btn.btn-success.waves-effect(type='button')
+                                i.material-icons home
+                            button.btn.btn-info.waves-effect(type='button')
+                                i.material-icons lock
+                            button.btn.btn-warning.waves-effect(type='button')
+                                i.material-icons perm_scan_wifi
+                            button.btn.btn-danger.waves-effect(type='button')
+                                i.material-icons flight_takeoff
+                            button.btn.bg-red.waves-effect(type='button')
+                                i.material-icons print
+                            button.btn.bg-pink.waves-effect(type='button')
+                                i.material-icons report_problem
+                            button.btn.bg-purple.waves-effect(type='button')
+                                i.material-icons search
+                            button.btn.bg-deep-purple.waves-effect(type='button')
+                                i.material-icons settings
+                            button.btn.bg-indigo.waves-effect(type='button')
+                                i.material-icons trending_up
+                            button.btn.bg-blue.waves-effect(type='button')
+                                i.material-icons verified_user
+                            button.btn.bg-light-blue.waves-effect(type='button')
+                                i.material-icons mic
+                            button.btn.bg-cyan.waves-effect(type='button')
+                                i.material-icons call_missed_outgoing
+                            button.btn.bg-teal.waves-effect(type='button')
+                                i.material-icons forum
+                            button.btn.bg-green.waves-effect(type='button')
+                                i.material-icons email
+                            button.btn.bg-light-green.waves-effect(type='button')
+                                i.material-icons chat
+                            button.btn.bg-lime.waves-effect(type='button')
+                                i.material-icons vpn_key
+                            button.btn.bg-yellow.waves-effect(type='button')
+                                i.material-icons content_cut
+                            button.btn.bg-amber.waves-effect(type='button')
+                                i.material-icons drafts
+                            button.btn.bg-orange.waves-effect(type='button')
+                                i.material-icons save
+                            button.btn.bg-deep-orange.waves-effect(type='button')
+                                i.material-icons weekend
+                            button.btn.bg-brown.waves-effect(type='button')
+                                i.material-icons access_alarm
+                            button.btn.bg-grey.waves-effect(type='button')
+                                i.material-icons location_searching
+                            button.btn.bg-blue-grey.waves-effect(type='button')
+                                i.material-icons merge_type
+                            button.btn.bg-black.waves-effect.waves-light(type='button')
+                                i.material-icons publish
+                        .icon-button-demo.m-t-25
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons extension
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons home
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons lock
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons perm_scan_wifi
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons flight_takeoff
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons print
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons report_problem
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons search
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons settings
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons trending_up
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons verified_user
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons mic
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons call_missed_outgoing
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons forum
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons email
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons chat
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons vpn_key
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons content_cut
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons drafts
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons save
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons weekend
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons access_alarm
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons location_searching
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons merge_type
+                            button.btn.btn-default.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons publish
+                        .icon-button-demo
+                            button.btn.btn-primary.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons extension
+                            button.btn.btn-success.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons home
+                            button.btn.btn-info.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons lock
+                            button.btn.btn-warning.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons perm_scan_wifi
+                            button.btn.btn-danger.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons flight_takeoff
+                            button.btn.bg-red.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons print
+                            button.btn.bg-pink.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons report_problem
+                            button.btn.bg-purple.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons search
+                            button.btn.bg-deep-purple.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons settings
+                            button.btn.bg-indigo.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons trending_up
+                            button.btn.bg-blue.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons verified_user
+                            button.btn.bg-light-blue.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons mic
+                            button.btn.bg-cyan.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons call_missed_outgoing
+                            button.btn.bg-teal.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons forum
+                            button.btn.bg-green.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons email
+                            button.btn.bg-light-green.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons chat
+                            button.btn.bg-lime.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons vpn_key
+                            button.btn.bg-yellow.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons content_cut
+                            button.btn.bg-amber.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons drafts
+                            button.btn.bg-orange.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons save
+                            button.btn.bg-deep-orange.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons weekend
+                            button.btn.bg-brown.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons access_alarm
+                            button.btn.bg-grey.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons location_searching
+                            button.btn.bg-blue-grey.btn-circle.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons merge_type
+                            button.btn.bg-black.btn-circle.waves-effect.waves-circle.waves-float.waves-light(type='button')
+                                i.material-icons publish
+                        h2.card-inside-title
+                            | Large Circle
+                        .icon-button-demo.m-t-25
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons extension
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons home
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons lock
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons perm_scan_wifi
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons flight_takeoff
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons print
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons report_problem
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons search
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons settings
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons trending_up
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons verified_user
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons mic
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons call_missed_outgoing
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons forum
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons email
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons chat
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons vpn_key
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons content_cut
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons drafts
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons save
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons weekend
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons access_alarm
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons location_searching
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons merge_type
+                            button.btn.btn-default.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons publish
+                        .icon-button-demo
+                            button.btn.btn-primary.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons extension
+                            button.btn.btn-success.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons home
+                            button.btn.btn-info.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons lock
+                            button.btn.btn-warning.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons perm_scan_wifi
+                            button.btn.btn-danger.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons flight_takeoff
+                            button.btn.bg-red.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons print
+                            button.btn.bg-pink.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons report_problem
+                            button.btn.bg-purple.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons search
+                            button.btn.bg-deep-purple.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons settings
+                            button.btn.bg-indigo.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons trending_up
+                            button.btn.bg-blue.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons verified_user
+                            button.btn.bg-light-blue.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons mic
+                            button.btn.bg-cyan.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons call_missed_outgoing
+                            button.btn.bg-teal.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons forum
+                            button.btn.bg-green.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons email
+                            button.btn.bg-light-green.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons chat
+                            button.btn.bg-lime.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons vpn_key
+                            button.btn.bg-yellow.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons content_cut
+                            button.btn.bg-amber.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons drafts
+                            button.btn.bg-orange.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons save
+                            button.btn.bg-deep-orange.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons weekend
+                            button.btn.bg-brown.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons access_alarm
+                            button.btn.bg-grey.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons location_searching
+                            button.btn.bg-blue-grey.btn-circle-lg.waves-effect.waves-circle.waves-float(type='button')
+                                i.material-icons merge_type
+                            button.btn.bg-black.btn-circle-lg.waves-effect.waves-circle.waves-float.waves-light(type='button')
+                                i.material-icons publish
+        // #END# Icon Buttons
+        // Icon & Text Buttons
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | ICON &amp; TEXT BUTTONS
+                            small Make icon &amp; text buttons
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .icon-and-text-button-demo
+                            button.btn.btn-primary.waves-effect(type='button')
+                                i.material-icons extension
+                                span EXTENSION
+                            button.btn.btn-success.waves-effect(type='button')
+                                i.material-icons home
+                                span HOME
+                            button.btn.btn-info.waves-effect(type='button')
+                                i.material-icons lock
+                                span LOCK
+                            button.btn.btn-warning.waves-effect(type='button')
+                                i.material-icons perm_scan_wifi
+                                span SCAN WIFI
+                            button.btn.btn-danger.waves-effect(type='button')
+                                i.material-icons flight_takeoff
+                                span TAKE OFF
+                            button.btn.bg-red.waves-effect(type='button')
+                                i.material-icons print
+                                span PRINT...
+                            button.btn.bg-pink.waves-effect(type='button')
+                                i.material-icons report_problem
+                                span REPORT ISSUE
+                            button.btn.bg-purple.waves-effect(type='button')
+                                i.material-icons search
+                                span SEARCH
+                            button.btn.bg-deep-purple.waves-effect(type='button')
+                                i.material-icons settings
+                                span SETTINGS
+                            button.btn.bg-indigo.waves-effect(type='button')
+                                i.material-icons trending_up
+                                span TRENDING UP
+                            button.btn.bg-blue.waves-effect(type='button')
+                                i.material-icons verified_user
+                                span VERIFIED USER
+                            button.btn.bg-light-blue.waves-effect(type='button')
+                                i.material-icons mic
+                                span MIC
+                            button.btn.bg-teal.waves-effect(type='button')
+                                i.material-icons forum
+                                span FORUM
+                            button.btn.bg-green.waves-effect(type='button')
+                                i.material-icons email
+                                span EMAIL
+                            button.btn.bg-light-green.waves-effect(type='button')
+                                i.material-icons chat
+                                span CHAT
+                            button.btn.bg-lime.waves-effect(type='button')
+                                i.material-icons vpn_key
+                                span VPN KEY
+                            button.btn.bg-amber.waves-effect(type='button')
+                                i.material-icons drafts
+                                span DRAFTS
+                            button.btn.bg-orange.waves-effect(type='button')
+                                i.material-icons save
+                                span SAVE
+                            button.btn.bg-deep-orange.waves-effect(type='button')
+                                i.material-icons weekend
+                                span WEEKEND
+                            button.btn.bg-brown.waves-effect(type='button')
+                                i.material-icons access_alarm
+                                span ALARM
+        // #END# Icon & Text Buttons
+        // Button Groups
+        .block-header
+            h2
+                | BUTTON GROUPS
+                small Group a series of buttons together on a single line with the button group
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BASIC EXAMPLE
+                            small
+                                | Wrap a series of buttons with&nbsp;
+                                code .btn
+                                |  in&nbsp;
+                                code .btn-group
+                                | .
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-button-groups
+                            .btn-group(role='group')
+                                button.btn.btn-default.waves-effect(type='button') LEFT
+                                button.btn.btn-default.waves-effect(type='button') MIDDLE
+                                button.btn.btn-default.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.btn-primary.waves-effect(type='button') LEFT
+                                button.btn.btn-primary.waves-effect(type='button') MIDDLE
+                                button.btn.btn-primary.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.btn-success.waves-effect(type='button') LEFT
+                                button.btn.btn-success.waves-effect(type='button') MIDDLE
+                                button.btn.btn-success.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.btn-info.waves-effect(type='button') LEFT
+                                button.btn.btn-info.waves-effect(type='button') MIDDLE
+                                button.btn.btn-info.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.btn-warning.waves-effect(type='button') LEFT
+                                button.btn.btn-warning.waves-effect(type='button') MIDDLE
+                                button.btn.btn-warning.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.btn-danger.waves-effect(type='button') LEFT
+                                button.btn.btn-danger.waves-effect(type='button') MIDDLE
+                                button.btn.btn-danger.waves-effect(type='button') RIGHT
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are
+                                code .bg-pink
+                                |  class
+                        .demo-button-groups
+                            .btn-group(role='group')
+                                button.btn.bg-pink.waves-effect.waves-light(type='button') LEFT
+                                button.btn.bg-pink.waves-effect.waves-light(type='button') MIDDLE
+                                button.btn.bg-pink.waves-effect.waves-light(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.bg-cyan.waves-effect(type='button') LEFT
+                                button.btn.bg-cyan.waves-effect(type='button') MIDDLE
+                                button.btn.bg-cyan.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.bg-teal.waves-effect(type='button') LEFT
+                                button.btn.bg-teal.waves-effect(type='button') MIDDLE
+                                button.btn.bg-teal.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.bg-orange.waves-effect(type='button') LEFT
+                                button.btn.bg-orange.waves-effect(type='button') MIDDLE
+                                button.btn.bg-orange.waves-effect(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.bg-purple.waves-effect.waves-light(type='button') LEFT
+                                button.btn.bg-purple.waves-effect.waves-light(type='button') MIDDLE
+                                button.btn.bg-purple.waves-effect.waves-light(type='button') RIGHT
+                            .btn-group(role='group')
+                                button.btn.bg-blue-grey.waves-effect(type='button') LEFT
+                                button.btn.bg-blue-grey.waves-effect(type='button') MIDDLE
+                                button.btn.bg-blue-grey.waves-effect(type='button') RIGHT
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BUTTON TOOLBAR
+                            small
+                                | Combine sets of&nbsp;
+                                code &lt;div class=&quot;btn-group&quot;&gt;
+                                |  into a&nbsp;
+                                code &lt;div class=&quot;btn-toolbar&quot;&gt;
+                                |  for more complex components.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-button-toolbar.clearfix
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.btn-default.waves-effect(type='button') 1
+                                    button.btn.btn-default.waves-effect(type='button') 2
+                                    button.btn.btn-default.waves-effect(type='button') 3
+                                    button.btn.btn-default.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.btn-default.waves-effect(type='button') 5
+                                    button.btn.btn-default.waves-effect(type='button') 6
+                                    button.btn.btn-default.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.btn-default.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.btn-primary.waves-effect(type='button') 1
+                                    button.btn.btn-primary.waves-effect(type='button') 2
+                                    button.btn.btn-primary.waves-effect(type='button') 3
+                                    button.btn.btn-primary.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.btn-primary.waves-effect(type='button') 5
+                                    button.btn.btn-primary.waves-effect(type='button') 6
+                                    button.btn.btn-primary.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.btn-primary.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.btn-success.waves-effect(type='button') 1
+                                    button.btn.btn-success.waves-effect(type='button') 2
+                                    button.btn.btn-success.waves-effect(type='button') 3
+                                    button.btn.btn-success.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.btn-success.waves-effect(type='button') 5
+                                    button.btn.btn-success.waves-effect(type='button') 6
+                                    button.btn.btn-success.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.btn-success.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.btn-info.waves-effect(type='button') 1
+                                    button.btn.btn-info.waves-effect(type='button') 2
+                                    button.btn.btn-info.waves-effect(type='button') 3
+                                    button.btn.btn-info.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.btn-info.waves-effect(type='button') 5
+                                    button.btn.btn-info.waves-effect(type='button') 6
+                                    button.btn.btn-info.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.btn-info.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.btn-warning.waves-effect(type='button') 1
+                                    button.btn.btn-warning.waves-effect(type='button') 2
+                                    button.btn.btn-warning.waves-effect(type='button') 3
+                                    button.btn.btn-warning.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.btn-warning.waves-effect(type='button') 5
+                                    button.btn.btn-warning.waves-effect(type='button') 6
+                                    button.btn.btn-warning.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.btn-warning.waves-effect(type='button') 8
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are
+                                code .bg-pink
+                                |  class
+                        .demo-button-toolbar.clearfix
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.bg-pink.waves-effect(type='button') 1
+                                    button.btn.bg-pink.waves-effect(type='button') 2
+                                    button.btn.bg-pink.waves-effect(type='button') 3
+                                    button.btn.bg-pink.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.bg-pink.waves-effect(type='button') 5
+                                    button.btn.bg-pink.waves-effect(type='button') 6
+                                    button.btn.bg-pink.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.bg-pink.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.bg-cyan.waves-effect(type='button') 1
+                                    button.btn.bg-cyan.waves-effect(type='button') 2
+                                    button.btn.bg-cyan.waves-effect(type='button') 3
+                                    button.btn.bg-cyan.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.bg-cyan.waves-effect(type='button') 5
+                                    button.btn.bg-cyan.waves-effect(type='button') 6
+                                    button.btn.bg-cyan.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.bg-cyan.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.bg-teal.waves-effect(type='button') 1
+                                    button.btn.bg-teal.waves-effect(type='button') 2
+                                    button.btn.bg-teal.waves-effect(type='button') 3
+                                    button.btn.bg-teal.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.bg-teal.waves-effect(type='button') 5
+                                    button.btn.bg-teal.waves-effect(type='button') 6
+                                    button.btn.bg-teal.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.bg-teal.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.bg-orange.waves-effect(type='button') 1
+                                    button.btn.bg-orange.waves-effect(type='button') 2
+                                    button.btn.bg-orange.waves-effect(type='button') 3
+                                    button.btn.bg-orange.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.bg-orange.waves-effect(type='button') 5
+                                    button.btn.bg-orange.waves-effect(type='button') 6
+                                    button.btn.bg-orange.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.bg-orange.waves-effect(type='button') 8
+                            .btn-toolbar(role='toolbar' aria-label='Toolbar with button groups')
+                                .btn-group(role='group' aria-label='First group')
+                                    button.btn.bg-purple.waves-effect(type='button') 1
+                                    button.btn.bg-purple.waves-effect(type='button') 2
+                                    button.btn.bg-purple.waves-effect(type='button') 3
+                                    button.btn.bg-purple.waves-effect(type='button') 4
+                                .btn-group(role='group' aria-label='Second group')
+                                    button.btn.bg-purple.waves-effect(type='button') 5
+                                    button.btn.bg-purple.waves-effect(type='button') 6
+                                    button.btn.bg-purple.waves-effect(type='button') 7
+                                .btn-group(role='group' aria-label='Third group')
+                                    button.btn.bg-purple.waves-effect(type='button') 8
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | SIZING
+                            small
+                                | Instead of applying button sizing classes to every button in a group, just add&nbsp;
+                                code .btn-group-*
+                                |  to each&nbsp;
+                                code .btn-group
+                                | , including when nesting multiple groups.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3.align-center
+                                p
+                                    b Large Button Group
+                                .btn-group.btn-group-lg(role='group' aria-label='Large button group')
+                                    button.btn.bg-pink.waves-effect(type='button') LEFT
+                                    button.btn.bg-pink.waves-effect(type='button') MIDDLE
+                                    button.btn.bg-pink.waves-effect(type='button') RIGHT
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3.align-center
+                                p
+                                    b Default Button Group
+                                .btn-group(role='group' aria-label='Default button group')
+                                    button.btn.bg-pink.waves-effect(type='button') LEFT
+                                    button.btn.bg-pink.waves-effect(type='button') MIDDLE
+                                    button.btn.bg-pink.waves-effect(type='button') RIGHT
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3.align-center
+                                p
+                                    b Small Button Group
+                                .btn-group.btn-group-sm(role='group' aria-label='Small button group')
+                                    button.btn.bg-pink.waves-effect(type='button') LEFT
+                                    button.btn.bg-pink.waves-effect(type='button') MIDDLE
+                                    button.btn.bg-pink.waves-effect(type='button') RIGHT
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3.align-center
+                                p
+                                    b Extra-Small Button Group
+                                .btn-group.btn-group-xs(role='group' aria-label='Extra-small button group')
+                                    button.btn.bg-pink.waves-effect(type='button') LEFT
+                                    button.btn.bg-pink.waves-effect(type='button') MIDDLE
+                                    button.btn.bg-pink.waves-effect(type='button') RIGHT
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | NESTING
+                            small
+                                | Place a&nbsp;
+                                code .btn-group
+                                |  within another&nbsp;
+                                code .btn-group
+                                |  when you want dropdown menus mixed with a series of buttons.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-button-nesting
+                            .btn-group(role='group')
+                                button.btn.btn-default.waves-effect(type='button') 1
+                                button.btn.btn-default.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.btn-default.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.btn-primary.waves-effect(type='button') 1
+                                button.btn.btn-primary.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.btn-primary.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.btn-success.waves-effect(type='button') 1
+                                button.btn.btn-success.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.btn-success.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.btn-info.waves-effect(type='button') 1
+                                button.btn.btn-info.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.btn-info.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.btn-warning.waves-effect(type='button') 1
+                                button.btn.btn-warning.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.btn-warning.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.btn-danger.waves-effect(type='button') 1
+                                button.btn.btn-danger.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.btn-danger.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are
+                                code .bg-pink
+                                |  class
+                        .demo-button-nesting
+                            .btn-group(role='group')
+                                button.btn.bg-pink.waves-effect(type='button') 1
+                                button.btn.bg-pink.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.bg-pink.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.bg-cyan.waves-effect(type='button') 1
+                                button.btn.bg-cyan.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.bg-cyan.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.bg-teal.waves-effect(type='button') 1
+                                button.btn.bg-teal.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.bg-teal.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.bg-orange.waves-effect(type='button') 1
+                                button.btn.bg-orange.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.bg-orange.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.bg-purple.waves-effect(type='button') 1
+                                button.btn.bg-purple.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.bg-purple.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                            .btn-group(role='group')
+                                button.btn.bg-blue-grey.waves-effect(type='button') 1
+                                button.btn.bg-blue-grey.waves-effect(type='button') 2
+                                .btn-group(role='group')
+                                    button.btn.bg-blue-grey.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                        | Dropdown
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+                                        li
+                                            a(href='javascript:void(0);') Dropdown link
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | VERTICAL VARIATION
+                            small Make a set of buttons appear vertically stacked rather than horizontally.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .btn-group-vertical(role='group' aria-label='Vertical button group')
+                            button.btn.bg-pink.waves-effect(type='button') Button
+                            button.btn.bg-cyan.waves-effect(type='button') Button
+                            .btn-group(role='group')
+                                button#btnGroupVerticalDrop1.btn.bg-teal.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | Dropdown
+                                    span.caret
+                                ul.dropdown-menu(aria-labelledby='btnGroupVerticalDrop1')
+                                    li
+                                        a(href='javascript:void(0);') Dropdown link
+                                    li
+                                        a(href='javascript:void(0);') Dropdown link
+                            button.btn.bg-orange.waves-effect(type='button') Button
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | JUSTIFIED BUTTON GROUPS
+                            small
+                                | Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .btn-group.btn-group-justified(role='group' aria-label='Justified button group')
+                            a.btn.bg-pink.waves-effect(href='javascript:void(0);' role='button') LEFT
+                            a.btn.bg-pink.waves-effect(href='javascript:void(0);' role='button') MIDDLE
+                            a.btn.bg-pink.waves-effect(href='javascript:void(0);' role='button') RIGHT
+                        .btn-group.btn-group-justified.m-t-25.m-b-15(role='group' aria-label='Justified button group with nested dropdown')
+                            a.btn.bg-pink.waves-effect(href='javascript:void(0);' role='button') LEFT
+                            a.btn.bg-pink.waves-effect(href='javascript:void(0);' role='button') MIDDLE
+                            .btn-group(role='group')
+                                a.btn.bg-pink.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    | Dropdown
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+        // #END# Button Groups
+        // Button Dropdowns
+        .block-header
+            h2
+                | BUTTON DROPDOWNS
+                small
+                    | Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.
+        .row
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | SINGLE BUTTON DROPDOWNS
+                            small Turn a button into a dropdown toggle with some basic markup changes.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-single-button-dropdowns
+                            .btn-group
+                                button.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | DEFAULT
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-primary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | PRIMARY
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-success.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | SUCCESS
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-info.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | INFO
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-warning.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | WARNING
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are
+                                code .bg-pink
+                                |  class
+                        .demo-single-button-dropdowns
+                            .btn-group
+                                button.btn.bg-pink.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | PINK
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-cyan.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | CYAN
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-teal.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | TEAL
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-orange.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | ORANGE
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-purple.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | PURPLE
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+            .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | SPLITE BUTTON DROPDOWNS
+                            small
+                                | Similarly, create split button dropdowns with the same markup changes, only with a separate button.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-splite-button-dropdowns
+                            .btn-group
+                                button.btn.btn-default.waves-effect(type='button') DEFAULT
+                                button.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-primary.waves-effect(type='button') PRIMARY
+                                button.btn.btn-primary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-success.waves-effect(type='button') SUCCESS
+                                button.btn.btn-success.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-info.waves-effect(type='button') INFO
+                                button.btn.btn-info.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.btn-warning.waves-effect(type='button') WARNING
+                                button.btn.btn-warning.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are
+                                code .bg-pink
+                                |  class
+                        .demo-splite-button-dropdowns
+                            .btn-group
+                                button.btn.bg-pink.waves-effect(type='button') PINK
+                                button.btn.bg-pink.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-cyan.waves-effect(type='button') CYAN
+                                button.btn.bg-cyan.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-teal.waves-effect(type='button') TEAL
+                                button.btn.bg-teal.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-orange.waves-effect(type='button') ORANGE
+                                button.btn.bg-orange.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+                            .btn-group
+                                button.btn.bg-purple.waves-effect(type='button') PURPLE
+                                button.btn.bg-purple.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                                    li.divider(role='separator')
+                                    li
+                                        a(href='javascript:void(0);') Separated link
+        // #END# Button Dropdowns
+        // Dropups
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | DROPUP VARIATION
+                            small
+                                | Trigger dropdown menus above elements by adding&nbsp;
+                                code .dropup
+                                |  to the parent.
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .demo-dropup
+                            .btn-group.dropup
+                                button.btn.btn-default.waves-effect(type='button') DEFAULT DROPUP
+                                button.btn.btn-default.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.btn-primary.waves-effect(type='button') PRIMARY DROPUP
+                                button.btn.btn-primary.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.btn-success.waves-effect(type='button') SUCCESS DROPUP
+                                button.btn.btn-success.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.btn-info.waves-effect(type='button') INFO DROPUP
+                                button.btn.btn-info.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.btn-warning.waves-effect(type='button') WARNING DROPUP
+                                button.btn.btn-warning.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.btn-danger.waves-effect(type='button') DANGER DROPUP
+                                button.btn.btn-danger.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                        h2.card-inside-title
+                            | With Material Design Colors
+                            small
+                                | You can use material design colors which examples are
+                                code .bg-pink
+                                |  class
+                        .demo-dropup
+                            .btn-group.dropup
+                                button.btn.bg-pink.waves-effect(type='button') PINK DROPUP
+                                button.btn.bg-pink.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.bg-cyan.waves-effect(type='button') CYAN DROPUP
+                                button.btn.bg-cyan.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.bg-teal.waves-effect(type='button') TEAL DROPUP
+                                button.btn.bg-teal.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.bg-orange.waves-effect(type='button') ORANGE DROPUP
+                                button.btn.bg-orange.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.bg-purple.waves-effect(type='button') PURPLE DROPUP
+                                button.btn.bg-purple.waves-effect.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                            .btn-group.dropup
+                                button.btn.bg-blue-grey.waves-effect.waves-light(type='button') BLUE GREY DROPUP
+                                button.btn.bg-blue-grey.waves-effect.waves-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    span.caret
+                                    span.sr-only Toggle Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+        // #END# Dropups

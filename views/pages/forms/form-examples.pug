@@ -1,0 +1,282 @@
+extends ../../layouts/master
+
+block title
+    | Form Examples
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/sweetalert/sweetalert.css')
+block extra-js
+
+block content
+    .container-fluid
+        .block-header
+            h2 FORM EXAMPLES
+        // Vertical Layout
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | VERTICAL LAYOUT
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form
+                            label(for='email_address') Email Address
+                            .form-group
+                                .form-line
+                                    input#email_address.form-control(type='text' placeholder='Enter your email address')
+                            label(for='password') Password
+                            .form-group
+                                .form-line
+                                    input#password.form-control(type='password' placeholder='Enter your password')
+                            input#remember_me.filled-in(type='checkbox')
+                            label(for='remember_me') Remember Me
+                            br
+                            button.btn.btn-primary.m-t-15.waves-effect(type='button') LOGIN
+        // #END# Vertical Layout
+        // Vertical Layout | With Floating Label
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | VERTICAL LAYOUT
+                            small With floating label
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form
+                            .form-group.form-float
+                                .form-line
+                                    input#email_address.form-control(type='text')
+                                    label.form-label Email Address
+                            .form-group.form-float
+                                .form-line
+                                    input#password.form-control(type='password')
+                                    label.form-label Password
+                            input#remember_me_2.filled-in(type='checkbox')
+                            label(for='remember_me_2') Remember Me
+                            br
+                            button.btn.btn-primary.m-t-15.waves-effect(type='button') LOGIN
+        // Vertical Layout | With Floating Label
+        // Horizontal Layout
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | HORIZONTAL LAYOUT
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form.form-horizontal
+                            .row.clearfix
+                                .col-lg-2.col-md-2.col-sm-4.col-xs-5.form-control-label
+                                    label(for='email_address_2') Email Address
+                                .col-lg-10.col-md-10.col-sm-8.col-xs-7
+                                    .form-group
+                                        .form-line
+                                            input#email_address_2.form-control(type='text' placeholder='Enter your email address')
+                            .row.clearfix
+                                .col-lg-2.col-md-2.col-sm-4.col-xs-5.form-control-label
+                                    label(for='password_2') Password
+                                .col-lg-10.col-md-10.col-sm-8.col-xs-7
+                                    .form-group
+                                        .form-line
+                                            input#password_2.form-control(type='password' placeholder='Enter your password')
+                            .row.clearfix
+                                .col-lg-offset-2.col-md-offset-2.col-sm-offset-4.col-xs-offset-5
+                                    input#remember_me_3.filled-in(type='checkbox')
+                                    label(for='remember_me_3') Remember Me
+                            .row.clearfix
+                                .col-lg-offset-2.col-md-offset-2.col-sm-offset-4.col-xs-offset-5
+                                    button.btn.btn-primary.m-t-15.waves-effect(type='button') LOGIN
+        // #END# Horizontal Layout
+        // Inline Layout
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | INLINE LAYOUT
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form
+                            .row.clearfix
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6
+                                    .form-group
+                                        .form-line
+                                            input.form-control(type='text' placeholder='Email Address')
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6
+                                    .form-group
+                                        .form-line
+                                            input.form-control(type='password' placeholder='Password')
+                                .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                                    input#remember_me_4.filled-in(type='checkbox')
+                                    label(for='remember_me_4') Remember Me
+                                    button.btn.btn-primary.btn-lg.m-l-15.waves-effect(type='button') LOGIN
+        // #END# Inline Layout
+        // Inline Layout | With Floating Label
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | INLINE LAYOUT
+                            small With floating label
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        form
+                            .row.clearfix
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6
+                                    .form-group.form-float
+                                        .form-line
+                                            input.form-control(type='text')
+                                            label.form-label Email Address
+                                .col-lg-3.col-md-3.col-sm-3.col-xs-6
+                                    .form-group.form-float
+                                        .form-line
+                                            input.form-control(type='password')
+                                            label.form-label Password
+                                .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                                    input#remember_me_5.filled-in(type='checkbox')
+                                    label(for='remember_me_5') Remember Me
+                                    button.btn.btn-primary.btn-lg.m-l-15.waves-effect(type='button') LOGIN
+        // #END# Inline Layout | With Floating Label
+        // Multi Column
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MULTI COLUMN
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix
+                            .col-md-12
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-12')
+                        .row.clearfix
+                            .col-md-6
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-6')
+                            .col-md-6
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-6')
+                        .row.clearfix
+                            .col-md-4
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-4')
+                            .col-md-4
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-4')
+                            .col-md-4
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-4')
+                        .row.clearfix
+                            .col-md-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-3')
+                            .col-md-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-3')
+                            .col-md-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-3')
+                            .col-md-3
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-3')
+                        .row.clearfix
+                            .col-md-2
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-2')
+                            .col-md-2
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-2')
+                            .col-md-2
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-2')
+                            .col-md-2
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-2')
+                            .col-md-2
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-2')
+                            .col-md-2
+                                .form-group
+                                    .form-line
+                                        input.form-control(type='text' placeholder='col-md-2')
+        // #END# Multi Column

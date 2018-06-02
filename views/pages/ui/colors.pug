@@ -1,0 +1,136 @@
+extends ../../layouts/master
+
+block title
+    | Colors
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2 COLORS
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MATERIAL DESIGN COLORS
+                            small
+                                | Taken by Google&apos;s Material Design Color page which link is&nbsp;
+                                a(href='https://material.google.com/style/color.html#color-color-palette' target='_blank' title="Google's Material Design Color") material.google.com/style/color.html#color-color-palette
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .clearfix.row
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-red
+                                    .color-name RED
+                                    .color-code #F44336
+                                    .color-class-name bg-red
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-pink
+                                    .color-name PINK
+                                    .color-code #E91E63
+                                    .color-class-name bg-pink
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-purple
+                                    .color-name PURPLE
+                                    .color-code #9C27B0
+                                    .color-class-name bg-purple
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-deep-purple
+                                    .color-name DEEP PURPLE
+                                    .color-code #673AB7
+                                    .color-class-name bg-deep-purple
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-indigo
+                                    .color-name INDIGO
+                                    .color-code #3F51B5
+                                    .color-class-name bg-indigo
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-blue
+                                    .color-name BLUE
+                                    .color-code #2196F3
+                                    .color-class-name bg-blue
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-light-blue
+                                    .color-name LIGHT BLUE
+                                    .color-code #03A9F4
+                                    .color-class-name bg-light-blue
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-cyan
+                                    .color-name CYAN
+                                    .color-code #00BCD4
+                                    .color-class-name bg-cyan
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-teal
+                                    .color-name TEAL
+                                    .color-code #009688
+                                    .color-class-name bg-teal
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-green
+                                    .color-name GREEN
+                                    .color-code #4CAF50
+                                    .color-class-name bg-green
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-light-green
+                                    .color-name LIGHT GREEN
+                                    .color-code #8BC34A
+                                    .color-class-name bg-light-green
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-lime
+                                    .color-name LIME
+                                    .color-code #CDDC39
+                                    .color-class-name bg-lime
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-yellow
+                                    .color-name YELLOW
+                                    .color-code #FFEB3B
+                                    .color-class-name bg-yellow
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-amber
+                                    .color-name AMBER
+                                    .color-code #FFC107
+                                    .color-class-name bg-amber
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-orange
+                                    .color-name ORANGE
+                                    .color-code #FF9800
+                                    .color-class-name bg-orange
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-deep-orange
+                                    .color-name DEEP ORANGE
+                                    .color-code #FF5722
+                                    .color-class-name bg-deep-orange
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-brown
+                                    .color-name BROWN
+                                    .color-code #795548
+                                    .color-class-name bg-brown
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-grey
+                                    .color-name GREY
+                                    .color-code #9E9E9E
+                                    .color-class-name bg-grey
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-blue-grey
+                                    .color-name BLUE GREY
+                                    .color-code #607D8B
+                                    .color-class-name bg-blue-grey
+                            .col-xs-6.col-sm-4.col-md-3.col-lg-3
+                                .demo-color-box.bg-black
+                                    .color-name BLACK
+                                    .color-code #000000
+                                    .color-class-name bg-black

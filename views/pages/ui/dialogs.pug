@@ -1,0 +1,77 @@
+extends ../../layouts/master
+
+block title
+    | Dialogs
+
+block extra-css
+    link(rel='stylesheet' href='/assets/plugins/sweetalert/sweetalert.css')
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/bootstrap-notify/bootstrap-notify.js')
+    script(type='text/javascript' src='/assets/plugins/sweetalert/sweetalert.min.js')
+    script(type='text/javascript' src='/assets/js/pages/ui/dialogs.js')
+
+block content
+    .container-fluid
+        .block-header
+            h2
+                | DIALOGS
+                small
+                    | Taken by&nbsp;
+                    a(href='https://github.com/t4t5/sweetalert' target='_blank') github.com/t4t5/sweetalert
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2 EXAMPLES
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        .row.clearfix.js-sweetalert
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p A basic message
+                                button.btn.btn-primary.waves-effect(data-type='basic') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p A title with a text under
+                                button.btn.btn-primary.waves-effect(data-type='with-title') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p A success message!
+                                button.btn.btn-primary.waves-effect(data-type='success') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p
+                                    | A warning message, with a function attached to the
+                                    b Confirm
+                                    |  button...
+                                button.btn.btn-primary.waves-effect(data-type='confirm') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p
+                                    | ... and by passing a parameter, you can execute something else for
+                                    b Cancel
+                                    | .
+                                button.btn.btn-primary.waves-effect(data-type='cancel') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p A message with a custom icon
+                                button.btn.btn-primary.waves-effect(data-type='with-custom-icon') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p An HTML message
+                                button.btn.btn-primary.waves-effect(data-type='html-message') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p A message with auto close timer
+                                button.btn.btn-primary.waves-effect(data-type='autoclose-timer') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p
+                                    | A replacement for the
+                                    b prompt
+                                    |  function
+                                button.btn.btn-primary.waves-effect(data-type='prompt') CLICK ME
+                            .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                                p With a loader (for AJAX request for example)
+                                button.btn.btn-primary.waves-effect(data-type='ajax-loader') CLICK ME

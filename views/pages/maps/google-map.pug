@@ -1,0 +1,149 @@
+extends ../../layouts/master
+
+block title
+    | Google Map
+
+block extra-css
+
+block extra-js
+    script(type='text/javascript' src='/assets/plugins/gmaps/gmaps.js')
+    script(type='text/javascript' src='/assets/js/pages/maps/google.js')
+
+block content
+    .container-fluid
+        // Google Maps
+        .block-header
+            h2
+                | GOOGLE MAPS
+                small
+                    | Taken from&nbsp;
+                    a(href='https://developers.google.com/maps/' target='_blank') developers.google.com/maps
+                    |  &amp;&nbsp;
+                    a(href='https://hpneo.github.io/gmaps/' target='_blank') hpneo.github.io/gmaps
+        .alert.alert-warning
+            | You need to get&nbsp;
+            b Google Map API Key
+            |  for display maps with&nbsp;
+            a.alert-link(href='https://developers.google.com/maps/documentation/javascript/get-api-key' target='_blank') this link
+            |  (Also you can find documentation on same page).
+        // Basic Example
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | BASIC EXAMPLE
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #gmap_basic_example.gmap
+        // #END# Basic Example
+        // Markers
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | MARKERS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #gmap_markers.gmap
+        // #END# Markers
+        // Static Maps
+        .row.clearfix
+            .col-lg-4.col-md-4.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | STATIC MAPS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #gmap_static_map.gmap
+            .col-lg-4.col-md-4.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | STATIC MAPS - WITH MARKERS
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #gmap_static_map_with_markers.gmap
+            .col-lg-4.col-md-4.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | STATIC MAPS - WITH POLYLINE
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #gmap_static_map_polyline.gmap
+        // #END# Static Maps
+        // Panorama (Street View)
+        .row.clearfix
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .card
+                    .header
+                        h2
+                            | PANORAMA (STREET VIEW)
+                        ul.header-dropdown.m-r--5
+                            li.dropdown
+                                a.dropdown-toggle(href='javascript:void(0);' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                    i.material-icons more_vert
+                                ul.dropdown-menu.pull-right
+                                    li
+                                        a(href='javascript:void(0);') Action
+                                    li
+                                        a(href='javascript:void(0);') Another action
+                                    li
+                                        a(href='javascript:void(0);') Something else here
+                    .body
+                        #gmap_panorama.gmap
+        // #END# Panorama (Street View)
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDB8bmtghEUCGDxEhdLbaTOG9yAENpyHaM' type='text/javascript')
